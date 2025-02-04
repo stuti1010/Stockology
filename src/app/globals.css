@@ -1,6 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
+=======
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+>>>>>>> naina
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -27,7 +41,11 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+<<<<<<< HEAD
     --radius: 0.5rem
+=======
+    --radius: 0.5rem;
+>>>>>>> naina
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -53,9 +71,16 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
+<<<<<<< HEAD
     --chart-5: 340 75% 55%
   }
 }
+=======
+    --chart-5: 340 75% 55%;
+  }
+}
+
+>>>>>>> naina
 @layer base {
   * {
     @apply border-border;
@@ -64,6 +89,7 @@
     @apply bg-background text-foreground;
   }
 }
+<<<<<<< HEAD
 
 .border-yellow-500 {
   border-color: #facc15;
@@ -92,3 +118,17 @@
 .scrollbar-hide {
   scrollbar-width: none;
 }
+=======
+.slide-in {
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+>>>>>>> naina

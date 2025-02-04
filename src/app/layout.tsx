@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+<<<<<<< HEAD
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+=======
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+// import Footerend from "@/components/Footerend";
+
+
+>>>>>>> naina
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,11 +36,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+<<<<<<< HEAD
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar/>
         {children}
       <Footer/>
+=======
+        className={`${geistSans.variable} ${geistMono.variable} antialiased pt-20`}
+      >
+        <Navbar/>
+        {children}
+        <Footer/>
+        {/* <Footerend/> */}
+>>>>>>> naina
       </body>
     </html>
   );
