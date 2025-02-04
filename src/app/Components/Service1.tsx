@@ -7,7 +7,7 @@ const links=[
     {
       title: "IPO Investments",
       icon: (
-        <FaChartLine className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <FaChartLine className="h-full w-full text-neutral-500  hover:text-green-600   dark:text-neutral-300" />
       ),
       href: "#",
     },
@@ -15,14 +15,14 @@ const links=[
     {
       title: "Mobile & Online Trading PLatfrom",
       icon: (
-        <FaMobileAlt className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <FaMobileAlt className="h-full w-full text-neutral-500  hover:text-green-600 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
     title: "Equity Brokery",
       icon: (
-        <FaBalanceScale className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <FaBalanceScale className="h-full w-full text-neutral-500  hover:text-green-600 dark:text-neutral-300" />
       ),
       href: "#",
     },
@@ -30,21 +30,21 @@ const links=[
     {
       title: "Mutual Funds",
       icon: (
-        <FaPiggyBank className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <FaPiggyBank className="h-full w-full text-neutral-500  hover:text-green-600 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
       title: "Financial Education",
       icon: (
-        <FaGraduationCap className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <FaGraduationCap className="h-full w-full text-neutral-500  hover:text-green-600 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
       title: "Insurance",
       icon: (
-        <FaShieldAlt className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <FaShieldAlt className="h-full w-full hover:text-green-600 text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
@@ -54,7 +54,7 @@ const links=[
 const Service1 = () => {
   return (
     <div>
-      <div className="flex items-center justify-center py-4 w-full">
+      <div className="flex items-center justify-center py- w-full ">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}

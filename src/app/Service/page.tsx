@@ -196,62 +196,19 @@ const content=[
       </div>
       </motion.section>
       </div>
-
-      {/* *second section
-      <div>
-      <section className="relative  text-white py-10 px-5 md:px-10">
-      {/* Wave Background 
-      <svg
-        className="absolute top-0 left-0 w-full"
-        viewBox="0 0 1440 320"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill="#ffffff"
-          fillOpacity="1"
-          d="M0,192L48,202.7C96,213,192,235,288,213.3C384,192,480,128,576,96C672,64,768,64,864,85.3C960,107,1056,149,1152,186.7C1248,224,1344,256,1392,272L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
-      <WavyBackground
-     colors={["#4A5568", "#6B7280", "#9CA3AF", "#CBD5E1", "#E5E7EB"]}
-      waveWidth={50}
-      backgroundFill="transparent"
-      blur={6}
-      waveOpacity={0.3}
-      speed="slow"
-      className="w-full flex flex-col items-center justify-center"
-    >
-      {/* Section Title 
-      <div className="text-center mb-16 pt-2">
+{/**second section */}
+<div className="pt-8">
+<div className="text-center mb-16 pt-2">
         <h2 className="text-4xl font-bold tracking-wide text-black">
-          Our Services
+          We Provide Variety Of Services
         </h2>
         <p className="text-gray-900 text-semibold mt-3">
           We offer a variety of services to help your business grow.
         </p>
       </div>
-
-      {/* Animated Service Cards 
-      <motion.div
-        key={currentService}
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -30 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
-        className={`p-10 rounded-2xl shadow-lg max-w-lg mx-auto text-center ${services1[currentService].bg}`}
-      >
-        <div className="text-5xl">{services1[currentService].icon}</div>
-        <h3 className="text-2xl text-white font-semibold mt-4">
-          {services1[currentService].title}
-        </h3>
-        <p className="text-lg text-white mt-2">
-          {services1[currentService].description}
-        </p>
-      </motion.div>
-    </WavyBackground>
-
-    </section>
-      </div> */}
+      <Service1/>
+</div>
+      
 {/**third section */}
 <div className="py-6 ">
   <div>
@@ -277,17 +234,6 @@ const content=[
   <FinancialEducation/>
 </div>
 
-<div>
-<div className="text-center mb-16 pt-2">
-        <h2 className="text-4xl font-bold tracking-wide text-black">
-          We Provide Variety Of Services
-        </h2>
-        <p className="text-gray-900 text-semibold mt-3">
-          We offer a variety of services to help your business grow.
-        </p>
-      </div>
-      <Service1/>
-</div>
     </div>
   );
 };
