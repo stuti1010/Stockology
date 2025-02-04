@@ -15,10 +15,7 @@ const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false); // State for mobile menu
   const router = useRouter()
 
-  type Props = {
-    href: string; // Explicitly define the type
-    children: React.ReactNode;
-  };
+  
   
 
   // Function to toggle dropdown on click (works for mobile)
