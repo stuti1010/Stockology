@@ -44,7 +44,7 @@ export const navData = [
     {
       id: 6,
       label: "Contact Us",
-      href: "/Contact",
+      href: "/Contact-us",
       type: "link",
     },
     {

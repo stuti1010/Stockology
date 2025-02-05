@@ -10,6 +10,8 @@ import MutualFunds from "../Components/MutualFunds";
 import IPO from "../Components/IPO";
 import FinancialEducation from "../Components/FinancialEducation";
 import Service1 from "../Components/Service1";
+import Insurance from "../Components/Insurance";
+import MobileOnline from "../Components/Mobile&Online";
 
 
 const page = () => {
@@ -233,7 +235,12 @@ const content=[
 <div className="py-4">
   <FinancialEducation/>
 </div>
-
+{/* <div className="py-4">
+  <Insurance/>
+</div> */}
+<div className="py-4">
+<MobileOnline/>
+</div>
     </div>
   );
 };

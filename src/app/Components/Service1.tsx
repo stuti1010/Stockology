@@ -44,7 +44,7 @@ const links=[
     {
       title: "Insurance",
       icon: (
-        <FaShieldAlt className="h-full w-full hover:text-green-600 text-neutral-500 dark:text-neutral-300" />
+        <FaShieldAlt className="h-full w-full  hover:text-green-600 text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
@@ -54,9 +54,9 @@ const links=[
 const Service1 = () => {
   return (
     <div>
-      <div className="flex items-center justify-center py- w-full ">
+      <div className="flex items-center justify-center py-4 w-full ">
       <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
+        mobileClassName="translate-y-20 " 
         items={links}
       />
     </div>

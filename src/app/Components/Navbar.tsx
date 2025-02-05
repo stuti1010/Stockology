@@ -3,20 +3,23 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { navData } from "../navData";
-// import { ShimmerButtonDemo } from "./Dematebutton";
+import { ShimmerButtonDemo } from "./Dematebutton";
 import { useRouter } from "next/navigation";
 
 
 
 const Navbar = () => {
+
+  
   const [showDropdown, setShowDropdown] = useState<number | null>(null); // Track which dropdown is open
   const [showMobileMenu, setShowMobileMenu] = useState(false); // State for mobile menu
   const router = useRouter()
 
   
+  
 
   // Function to toggle dropdown on click (works for mobile)
-  const handleClick=(href)=>{
+  const handleClick=(href: string)=>{
     router.push(href)
   }
   const toggleDropdown = (id: number) => {
@@ -24,7 +27,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container mx-auto z-[1000] ">
+    <div className="container mx-auto z-[1000] fixed top-0 left-0">
       <section className="header shadow-lg bg-gradient-to-r from-red-50 to-green-50   text-gray-900 w-full h-[100px] py-2 flex justify-evenly items-center px-4">
         {/* Logo Section */}
         <div className="flex items-center">
@@ -90,7 +93,7 @@ const Navbar = () => {
               onMouseLeave={() => window.innerWidth > 1024 && item.type === "dropdown" && setShowDropdown(null)}
             >
               <button
-               onClick={() => (item.type === "dropdown" ? toggleDropdown(item.id) : handleClick(item.href))}
+               onClick={() => (item.type === "dropdown" ? toggleDropdown(Number(item.id)) : handleClick(item.href))}
 
                 className=" px-4 py-2 md:text-lg hover:bg-white rounded-full hover:text-black  font-medium transition duration-300 w-full text-left flex justify-between items-center"
               >
@@ -104,7 +107,7 @@ const Navbar = () => {
 
               {/* Dropdown Menu */}
               {item.type === "dropdown" && showDropdown === item.id && (
-                <ul className={`absolute top-10 left-0 bg-white shadow-md rounded-lg  text-black text-left z-10 w-[150px] transition-opacity duration-300 ease-in-out ${
+                <ul className={`absolute top-10 left-0 bg-white shadow-md rounded-lg z-[1000] text-black text-left  w-[150px] transition-opacity duration-300 ease-in-out ${
                   showDropdown === item.id ? "opacity-100 visible" : "opacity-0 invisible"
                 }`}>
                   {item.subItems?.map((subItem) => (
@@ -121,7 +124,7 @@ const Navbar = () => {
             </div>
           ))}
         </nav>
-        {/* <div><ShimmerButtonDemo text="Open Demat Account"/></div> */}
+        <div><ShimmerButtonDemo text="Open Demat Account"/></div>
       </section>
     </div>
   );

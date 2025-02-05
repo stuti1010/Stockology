@@ -42,7 +42,7 @@ const About = () => {
     
       <MeetOurDirectors/>
 
-      {/* <Team/> */}
+      <Team/>
 
       <Journey/>
 
