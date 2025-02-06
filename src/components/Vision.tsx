@@ -2,7 +2,7 @@ import React from 'react'
 
 const Vision = () => {
   return (
-    <div className='container mx-auto md:my-24 my-10 px-3'>
+    <div className='container mx-auto md:my-24 my-10 px-3 '>
        <div className='md:grid grid-cols-2 max-w-7xl mx-auto'>
       <div className=''>
         <img src="/md3.jpg" alt=""className='w-[500px] h-[400px] object-cover rounded-xl' />

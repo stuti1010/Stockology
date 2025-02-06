@@ -5,7 +5,7 @@ import { HoverEffect } from "../components/ui/card-hover-effect";
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto mt-10 ">
         <div className="relative flex w-full py-10 flex-col items-center justify-center overflow-hidden rounded-lg bg-background ">
       <p className="z-10 whitespace-pre-wrap text-center md:text-5xl text-2xl  font-semibold tracking-tighter text-black dark:text-white">
         <h1>All Your Finances, Simplified in One Spot</h1>
@@ -60,17 +60,6 @@ export const projects = [
       "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
     link: "",
   },
-  {
-    title: "IPO",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "",
-  },
-  {
-    title: "Corporate FD's",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "",
-  },
+ 
   
 ];

@@ -156,14 +156,15 @@ const Footer = () => {
           <h1 className="text-gray-300">
            
             <span className=" font-semibold text-white">
-              Choiceinternational. CIN
+            STOCKOLOGY SECURITIES PRIVATE LIMITED 
+            . CIN
             </span>
             - U65929MP2021PTC058908
           </h1>
           <h1 className="text-gray-300">
            
             <span className=" font-semibold text-white">
-            NSE
+            STOCKOLOGY SECURITIES PRIVATE LIMITED: NSE Member Code
             </span>
              - 90434
           </h1>

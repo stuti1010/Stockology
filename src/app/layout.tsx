@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// import Footerend from "@/components/Footerend";
+import Footerend from "@/components/Footerend";
 
 
 
@@ -36,7 +36,7 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <Footer/>
-        {/* <Footerend/> */}
+        <Footerend/>
       </body>
     </html>
   );

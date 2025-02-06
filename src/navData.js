@@ -15,7 +15,7 @@ export const navData = [
     {
       id: 3,
       label: "App",
-      href: "/App",
+      href: "/Appp",
       type: "link",
     },
     {

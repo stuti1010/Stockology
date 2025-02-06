@@ -1,5 +1,7 @@
+import Bigblogcard from "@/components/Bigblogcard";
 import { CardHoverEffectDemo } from "@/components/Cardhover";
 import Corevalue from "@/components/Corevalue";
+// import Editor from "@/components/Editor";
 import Mockup from "@/components/Mockup";
 import { Testimonials } from "@/components/Testimonals";
 // import Value from "@/components/Value";
@@ -12,9 +14,11 @@ export default function Home() {
       <CardHoverEffectDemo />
       <Vision />
       
-      {/* <Value /> */}
+      
       <Testimonials/>
       <Corevalue />
+    
+      {/* <Bigblogcard/> */}
     </div>
   );
 }
