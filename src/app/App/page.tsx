@@ -1,41 +1,40 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 import { FaChartLine, FaUserShield, FaBolt } from "react-icons/fa";
-import Blog from '../Components/Blogs';
 
 export default function App() {
-  const [activeImage, setActiveImage] = useState("/phone1.png");
+  const [activeImage, setActiveImage] = useState("/phone11.png");
 
   const features = [
     {
       icon: <FaChartLine className="text-3xl text-blue-500" />,
       title: "Real-time Stock Analysis",
       description: "Get real-time stock insights and analysis powered by AI.",
-      image: "/phone1.png"
+      image: "/phone01.png"
     },
     {
       icon: <FaUserShield className="text-3xl text-green-500" />,
       title: "Secure Transactions",
       description: "Your investments are protected with end-to-end encryption.",
-      image: "/phone2.png"
+      image: "/phone4.png"
     },
     {
       icon: <FaBolt className="text-3xl text-yellow-500" />,
       title: "Fast Execution",
       description: "Instant order execution to help you stay ahead in the market.",
-      image: "/phone3.png"
+      image: "/phone11.png"
     }
   ];
 
   return (
-    <div className='container mx-auto '>
+    <div className='container mx-auto'>
       <section 
-        className="relative w-full flex items-center bg-black/70 bg-cover bg-center bg-no-repeat" 
-        style={{ backgroundImage: "url('/bg.jpg')" }} >
-        <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 lg:px-20">
+        className="  w-full  h-full items-center bg-black/70 bg-cover  bg-no-repeat overflow-hidden" 
+        style={{ backgroundImage: "url('/bg.jpg')", backgroundSize: 'cover',backgroundPosition: 'center',
+          width: '100%', }}  >
+        <div className=" flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 lg:px-20">
           
           {/* Left Text Content */}
           <motion.div 
@@ -69,7 +68,7 @@ export default function App() {
       </section>
 
       {/**second section */}
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-10 p-8">
+      <div className="flex flex-col lg:flex-row items-center justify-center ">
         
         {/* Left Section: Mobile Mockup */}
         <motion.div 
@@ -79,10 +78,10 @@ export default function App() {
           className="relative w-96 md:w-[550px] lg:w-[500px] h-auto"
         >
           {/* Mobile Background */}
-          <img src="/mobile1.png" alt="Mobile Mockup" className="w-full h-auto" />
+          <img src="/mobile1.png" alt="Mobile Mockup" className="w-full h-auto max-w-full" />
 
           {/* Screenshots inside mobile */}
-          <div className="absolute top-[4%] left-[19%] w-[57%] h-[73%]  overflow-hidden object-cover rounded-e-3xl">
+          <div className="absolute top-[3.5%] left-[19%] w-[57%] h-[73.5%]  overflow-hidden object-cover ">
             <Image 
               src={activeImage} 
               alt="App Screenshot" 
@@ -105,7 +104,7 @@ export default function App() {
               key={index}
               whileHover={{ scale: 1.05 }} 
               onMouseEnter={() => setActiveImage(feature.image)}
-              onMouseLeave={() => setActiveImage("/phone1.png")}
+              onMouseLeave={() => setActiveImage("/phone01.png")}
               className="flex items-center space-x-4 bg-gray-100 p-4 rounded-lg shadow-md"
             >
               {feature.icon}
@@ -117,9 +116,17 @@ export default function App() {
           ))}
         </motion.div>
       </div>
-<div className='py-8'>
+{/* <div className='py-8'>
   <Blog/>
-</div>
+</div> */}
+
+
+
+{/* <div className='py-8'>
+<Journey/>
+</div> */}
+
+
     </div>
   );
 }

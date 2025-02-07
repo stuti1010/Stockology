@@ -3,18 +3,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useState,useEffect } from "react";
-import { FaPiggyBank, FaShieldAlt, FaChartLine, FaGraduationCap, FaBalanceScale, FaMobileAlt } from "react-icons/fa";
 import Image from "next/image";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import MutualFunds from "../Components/MutualFunds";
 import IPO from "../Components/IPO";
 import FinancialEducation from "../Components/FinancialEducation";
 import Service1 from "../Components/Service1";
-import Insurance from "../Components/Insurance";
 import MobileOnline from "../Components/Mobile&Online";
 
 
-const page = () => {
+const Page = () => {
 
     const services = [
         { title: "Equity Broking", description: "Strategic tax planning to minimize liabilities and maximize returns." },
@@ -23,38 +21,6 @@ const page = () => {
         { title: "IPO Investment", description: "Get early access to high-growth companies and invest in Initial Public Offerings (IPOs)." },
       ];
 
-      const services1 = [
-        {
-          title: "  Equity Broking ",description: "Trade with confidence using our low-cost and high-speed equity broking services.",
-          icon: <FaBalanceScale /> ,
-           bg:"bg-black",
-        },
-        {
-          title: "Mutual Funds",description:"Diversify your investments with top-rated mutual funds and maximize your returns.",
-           icon: <FaPiggyBank />,
-          bg: "bg-black",
-        },
-        {
-          title: "Financial Education",description:"Learn stock market strategies, trading techniques, and investment fundamentals.",
-           icon: <FaGraduationCap />,
-          bg: "bg-black",
-        },
-        {
-          title: "Insurance",description:  "Protect your future with comprehensive insurance plans for life, health, and wealth.", 
-           icon: <FaShieldAlt />,
-          bg: "bg-black",
-        },
-        {
-          title: "IPO Investments",description: "Get early access to high-growth companies and invest in Initial Public Offerings (IPOs).",
-            icon: <FaChartLine />,
-          bg: "bg-black",
-        },
-        {
-          title: "Mobile & Online Trading PLatfrom",description: "Trade anytime, anywhere with our powerful mobile and online trading platforms.",
-            icon: <FaMobileAlt />,
-          bg: "bg-black",
-        },
-      ];
 
 const content=[
   {
@@ -138,7 +104,7 @@ const content=[
   }
 ];
 
-      const [currentService, setCurrentService] = useState(0);
+      const [, setCurrentService] = useState(Number);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -247,4 +213,4 @@ const content=[
 
 
 
-export default page;
+export default Page;

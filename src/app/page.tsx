@@ -1,21 +1,22 @@
-import Image from "next/image";
+
 import Mockup from "./Components/Mockup";
 import { CardHoverEffectDemo } from "./Components/Cardhover";
-import Vision from "./Components/Vision";
 import { Testimonials } from "./Components/Testimonals";
-import Value from "./Components/Value";
-import Corevalue from "./Components/Corevalue";
+import Visionandmision from "./Components/Visionandmision";
+
+import CoreValues2 from "./Components/Corevalue2";
 
 export default function Home() {
   return (
     <>
     <Mockup/>
     <CardHoverEffectDemo/>
-    <Vision/>
+    <Visionandmision/>
 
     <Testimonials/>
     
-    <Corevalue/>
+<CoreValues2/>
+
     </>
   );
 }

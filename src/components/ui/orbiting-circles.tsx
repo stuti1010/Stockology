@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+
 import { cn } from "@/lib/utils";
 import React from "react";
 import { Star } from "lucide-react"; // For active icon indicator
@@ -16,14 +16,13 @@ export interface OrbitingCirclesProps extends React.HTMLAttributes<HTMLDivElemen
 }
 
 export function OrbitingCircles({
-  className,
   duration = 30, // Slower rotation
   speed = 0.5,
   icons = [],
   activeDirector,
   setActiveDirector,
   centerLogo, // Destructure the new prop
-  ...props
+
 }: OrbitingCirclesProps) {
   const calculatedDuration = duration / speed;
 

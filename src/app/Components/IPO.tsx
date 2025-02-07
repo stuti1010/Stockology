@@ -93,7 +93,7 @@ const IPO = () => {
               <h1 className="text-bold md:text-6xl py-4">IPO Investments</h1>
               <div className="md:max-w-[650px] w-full py-3">
               <p className="text-gray-700 text-lg leading-tight">
-              An Initial Public Offering (IPO) is the process through which a private company offers its shares to the public for the first time. This marks the company's transition from being privately owned to publicly traded, typically on a stock exchange.Companies pursue IPOs to raise capital for expansion, pay off debt, or fund other strategic initiatives. By offering shares to the public, they can access a larger pool of investors and gain the capital needed to fuel growth.
+              An Initial Public Offering (IPO) is the process through which a private company offers its shares to the public for the first time. This marks the company&apos;s transition from being privately owned to publicly traded, typically on a stock exchange.Companies pursue IPOs to raise capital for expansion, pay off debt, or fund other strategic initiatives. By offering shares to the public, they can access a larger pool of investors and gain the capital needed to fuel growth.
                     </p></div>
               </div>
               <div className="p-10 text-black  w-full py-4">

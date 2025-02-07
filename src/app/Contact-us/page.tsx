@@ -7,7 +7,7 @@ import ContactForm from "../Components/Form";
 import { IoCall } from "react-icons/io5";
 
 import { MdAccessTimeFilled } from "react-icons/md";
-import Contact from "../Components/Contact";
+// import Contact from "../Components/Contact";
 import SearchBar from "../Components/Search"
 
 const page = () => {
@@ -112,7 +112,7 @@ const page = () => {
         </div>
         <SearchBar/></div>
      
-        <div className="md:mb-20 mb-8 max-w-7xl mx-auto"> <Contact/></div>
+        {/* <div className="md:mb-20 mb-8 max-w-7xl mx-auto"> <Contact/></div> */}
      
       {/* Map Section */}
       <div className="my-10 max-w-7xl mx-auto ">

@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { FaUsers, FaProjectDiagram, FaChartLine } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa";
 
 const Value = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FloatingDock } from '@/components/ui/floating-dock'
 import { FaPiggyBank, FaShieldAlt, FaChartLine, FaGraduationCap, FaBalanceScale, FaMobileAlt } from "react-icons/fa";
-import Image from 'next/image';
+
 
 const links=[
     {

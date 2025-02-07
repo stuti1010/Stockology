@@ -11,8 +11,8 @@ import { useRouter } from "next/navigation";
 const Navbar = () => {
 
   
-  const [showDropdown, setShowDropdown] = useState<number | null>(null); // Track which dropdown is open
-  const [showMobileMenu, setShowMobileMenu] = useState(false); // State for mobile menu
+  const [showDropdown, setShowDropdown] = useState<string | number | null>(null);
+  const [showMobileMenu, setShowMobileMenu] = useState(false); 
   const router = useRouter()
 
   

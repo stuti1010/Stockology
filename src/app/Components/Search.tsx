@@ -12,40 +12,44 @@ export default function SearchBar() {
   const [selectedLocation, setSelectedLocation] = useState(locations[0]);
 
   return (
-    <div className="md:flex items-start md:gap-20 gap-5 p-6 flex-col md:flex-row">
-      {/* Search Input */}
-      <div className="w-full md:w-1/2 relative">
-        <label className="block text-gray-700 font-semibold mb-2">Select Location</label>
-        <div className="relative">
-          <select
-            className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 transition-all duration-300 ease-in-out hover:border-green-500 appearance-none bg-white"
-            value={selectedLocation.name}
-            onChange={(e) =>
-              setSelectedLocation(locations.find((loc) => loc.name === e.target.value)!)
-            }
-          >
-            {locations.map((loc) => (
-              <option key={loc.name} value={loc.name} className="py-3">
-                {loc.name}
-              </option>
-            ))}
-          </select>
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <FaMapMarkerAlt className="text-gray-500" />
-          </div>
-          <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-            <FaChevronDown className="text-gray-500" />
+    <div className="max-w-7xl mx-auto px-4">
+      <div className="bg-white rounded-3xl shadow-2xl overflow-hidden md:flex md:items-start md:gap-8 p-8 transform transition-all duration-500 hover:shadow-3xl">
+        {/* Search Input */}
+        <div className="w-full md:w-1/2 relative mb-8 md:mb-0">
+          <label className="block text-gray-700 font-semibold mb-4 text-lg">Select Location</label>
+          <div className="relative">
+            <select
+              className="w-full p-4 pl-12 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-green-300 focus:border-green-500 transition-all duration-300 ease-in-out appearance-none bg-white shadow-sm hover:shadow-md"
+              value={selectedLocation.name}
+              onChange={(e) =>
+                setSelectedLocation(locations.find((loc) => loc.name === e.target.value)!)
+              }
+            >
+              {locations.map((loc) => (
+                <option key={loc.name} value={loc.name} className="py-3">
+                  {loc.name}
+                </option>
+              ))}
+            </select>
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <FaMapMarkerAlt className="text-gray-500 text-xl" />
+            </div>
+            <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+              <FaChevronDown className="text-gray-500 text-xl" />
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Address Display */}
-      <div className="w-full md:w-1/2 p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-lg shadow-lg mt-4 md:mt-0 transform transition-all duration-500 hover:scale-105">
-        <div className="flex items-center mb-4">
-          <FaMapMarkerAlt className="text-green-600 text-2xl mr-2" />
-          <h2 className="text-2xl font-bold text-gray-900">Address:</h2>
+        {/* Address Display */}
+        <div className="w-full md:w-1/2 p-8 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105">
+          <div className="flex items-center mb-6">
+            <div className="p-3 bg-green-500 rounded-full shadow-lg">
+              <FaMapMarkerAlt className="text-white text-2xl" />
+            </div>
+            <h2 className="text-2xl font-bold text-gray-900 ml-4">Address:</h2>
+          </div>
+          <p className="text-gray-700 text-lg leading-relaxed">{selectedLocation.address}</p>
         </div>
-        <p className="text-gray-700 text-lg">{selectedLocation.address}</p>
       </div>
     </div>
   );
