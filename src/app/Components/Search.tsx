@@ -13,10 +13,10 @@ export default function SearchBar() {
 
   return (
     <div className="max-w-7xl mx-auto px-4">
-      <div className="bg-white rounded-3xl shadow-2xl overflow-hidden md:flex md:items-start md:gap-8 p-8 transform transition-all duration-500 hover:shadow-3xl">
+      <div className="bg-black/75 rounded-3xl shadow-2xl overflow-hidden md:flex md:items-start md:gap-8 p-8 transform transition-all duration-500 hover:shadow-3xl">
         {/* Search Input */}
         <div className="w-full md:w-1/2 relative mb-8 md:mb-0">
-          <label className="block text-gray-700 font-semibold mb-4 text-lg">Select Location</label>
+          <label className="block text-white font-semibold mb-4 text-lg">Select Location</label>
           <div className="relative">
             <select
               className="w-full p-4 pl-12 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-green-300 focus:border-green-500 transition-all duration-300 ease-in-out appearance-none bg-white shadow-sm hover:shadow-md"
@@ -41,9 +41,9 @@ export default function SearchBar() {
         </div>
 
         {/* Address Display */}
-        <div className="w-full md:w-1/2 p-8 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105">
+        <div className="w-full md:w-1/2 p-8 bg-gradient-to-br from-green-400 to-green-300 rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105">
           <div className="flex items-center mb-6">
-            <div className="p-3 bg-green-500 rounded-full shadow-lg">
+            <div className="p-3 bg-green-600 rounded-full shadow-lg">
               <FaMapMarkerAlt className="text-white text-2xl" />
             </div>
             <h2 className="text-2xl font-bold text-gray-900 ml-4">Address:</h2>

@@ -1,5 +1,6 @@
 
 import MeetOurDirectors from "../Components/Directors";
+import Journey from "../Components/Journey1";
 import Team from "../Components/Team";
 import Timeline from "../Components/Timeline1";
 
@@ -46,6 +47,10 @@ const About = () => {
       <Team/>
 
       <Timeline/>
+
+
+<Journey/>
+
 
         </div>    
         </div>
