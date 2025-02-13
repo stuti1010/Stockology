@@ -24,7 +24,7 @@ const Value = () => {
 
 </div>
           {/* right */}
-          <div className="flex flex-col justify-center sm:mt-0 mt-4">
+          <div className="flex flex-col justify-center sm:mt-0 mt-4" >
             <h1 className="md:text-3xl text-2xl   lg:text-5xl font-semibold ">
               We value trust above everything
             </h1>

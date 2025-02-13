@@ -16,7 +16,7 @@ export function ShimmerButtonDemo({ text }: ShimmerButtonDemoProps) {
     className=""
     color={theme.theme === "dark" ? "#F4F9F3" : "#F4F9F3"}
   >
-      <Link href="/" className="shadow-2xl  text-center   text-xl rounded-xl   ">{text}
+      <Link href="/" className="shadow-2xl  text-center text-sm   md:text-xl rounded-xl   ">{text}
       </Link>
     
     
