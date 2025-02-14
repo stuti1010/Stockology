@@ -68,7 +68,7 @@ const Navbar = () => {
           <img
             src="/stklogo.png"
             alt="Logo"
-            className="md:w-28 md:h-24 h-20 w-24 py-2 object-fill"
+            className="md:w-28 md:h-24 h-16 w-16 py-2 object-fill"
           />
           {/* <h1 className=" text-lg font-bold">Stockology</h1> */}
         </div>
