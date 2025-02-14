@@ -14,7 +14,7 @@ export const footerData = {
     offering: [
       { name: "Technical", path: "/offering/technical" },
       { name: "Blog", path: "/blog" },
-      { name: "Pricing", path: "/pricing" },
+      { name: "Pricing", path: "/Pricing" },
       { name: "Terms & Conditions", path: "/terms" },
     ],
     quickLinks: [
