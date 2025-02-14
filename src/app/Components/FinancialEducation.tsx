@@ -1,94 +1,125 @@
-import React from 'react'
-import Image from 'next/image'
-import { StickyScroll } from '@/components/ui/sticky-scroll-reveal'
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { FaChartLine, FaExchangeAlt, FaCubes, FaChartPie, FaShieldAlt } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
-const content=[
-    {
-            title:"  Budgeting & Saving",
-            description:
-            " Learning how to budget is the foundation of good financial management. A budget helps track income and expenses, ensuring that individuals live within their means. Saving, on the other hand, is essential for future security, emergency funds, and investments.",
-            content:(
-    <div className="h-full w-full  flex items-center justify-center text-white">
-            <Image
-              src="/FE3.jpg"
-              width={300}
-              height={300}
-              className="h-full w-full object-cover"
-              alt="linear board demo"
-            />
-          </div>
-            ),
-        },
-        {
-                title:" Investing",
-                description:
-                " Understanding investing principles enables individuals to grow their wealth over time. It includes learning about stocks, bonds, mutual funds, real estate, and other investment vehicles. The more knowledgeable you are, the better equipped you'll be to build a diversified and profitable investment portfolio.",
-                content:(
-        <div className="h-full w-full  flex items-center justify-center text-white">
-                <Image
-                  src="/FE1.jpg"
-                  width={300}
-                  height={300}
-                  className="h-full w-full object-cover"
-                  alt="linear board demo"
-                />
-              </div>
-                ),
-            },
-            {
-                    title:" Debt Management",
-                    description:
-                    " Financial education teaches individuals how to manage and reduce debt. Whether it's credit card debt, student loans, or mortgages, understanding how to tackle debt efficiently can prevent it from becoming a financial burden.",
-                    content:(
-            <div className="h-full w-full  flex items-center justify-center text-white">
-                    <Image
-                      src="/FE2.jpg"
-                      width={300}
-                      height={300}
-                      className="h-full w-full object-cover"
-                      alt="linear board demo"
-                    />
-                  </div>
-                    ),
-                },
-                {
-                        title:"  Financial Planning",
-                        description:
-                        "Proper financial planning helps individuals set clear financial goals and devise strategies to achieve them. This includes planning for retirement, purchasing a home, or funding education. Financial planning also involves creating a safety net through insurance and savings.",
-                        content:(
-                <div className="h-full w-full  flex items-center justify-center text-white">
-                        <Image
-                          src="/FE.jpg"
-                          width={300}
-                          height={300}
-                          className="h-full w-full object-cover"
-                          alt="linear board demo"
-                        />
-                      </div>
-                        ),
-                    },
-]
+const content = [
+  {
+    title: "Equity Market",
+    description:
+      "The equity market, or stock market, is where shares of publicly listed companies are bought and sold. Investors buy shares to own a part of a company, and they earn profits through price appreciation and dividends.",
+    image: "/FE3.jpg",
+    icon: <FaChartLine />,
+    points: ["Invest in shares", "Earn dividends", "Long-term growth potential"],
+  },
+  {
+    title: "Derivative Market",
+    description:
+      "Derivatives are financial contracts whose value depends on the price of an underlying asset, such as stocks, commodities, or interest rates. The most common types of derivatives are options, futures, and swaps.",
+    image: "/FE1.jpg",
+    icon: <FaExchangeAlt />,
+    points: ["Manage risk", "Leverage trading", "High potential returns"],
+  },
+  {
+    title: "Commodity Market",
+    description:
+      "The commodity market involves trading raw materials or primary agricultural products like oil, gold, silver, wheat, and natural gas.",
+    image: "/FE2.jpg",
+    icon: <FaCubes />,
+    points: ["Trade raw materials", "Hedge against inflation", "Diverse asset classes"],
+  },
+  {
+    title: "Investment Strategy",
+    description:
+      "Investment strategy refers to the approach an investor uses to meet their financial goals. This includes asset selection, diversification, risk management, and time horizon.",
+    image: "/FE.jpg",
+    icon: <FaChartPie />,
+    points: ["Diversification", "Risk management", "Long-term planning"],
+  },
+  {
+    title: "Hedging",
+    description:
+      "Hedging is a risk management strategy used to offset potential losses in investments by taking an opposite position in a related asset.",
+    image: "/FE3.jpg",
+    icon: <FaShieldAlt />,
+    points: ["Reduce investment risk", "Use derivatives", "Protect assets"],
+  },
+];
 
 const FinancialEducation = () => {
-  return (
-    <div className='container mx-auto'>
-      <div className='container mx-auto '>
-            <div className=" bg-[url(/background1.jpeg)] bg-no-repeat bg-cover relative bg-fixed ">
-              <div>
-              <h1 className="text-bold md:text-6xl py-4">Financial Education</h1>
-              <div className="md:max-w-[650px] w-full py-3">
-              <p className="text-gray-700 text-lg leading-tight">
-              Financial education empowers individuals to make informed decisions about managing their money. It includes understanding budgeting, saving, investing, and managing debt effectively. With proper financial knowledge, individuals can plan for their future, navigate the complexities of financial markets, and achieve their long-term financial goals. A solid foundation in financial education helps prevent poor financial choices, reduce financial stress, and increase overall well-being. 
-                    </p></div>
-              </div>
-              <div className="p-10 text-black  w-full py-4">
-              <div className=" inset-0 bg-black/30"></div> 
-              <StickyScroll content={content} contentClassName="" />
-            </div>
-            </div>
-          </div>
-    </div>
-  )
-}
+  const [selected, setSelected] = useState(content[0]);
 
-export default FinancialEducation
+  // Auto change selected content every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSelected((prev) => {
+        const nextIndex = (content.indexOf(prev) + 1) % content.length;
+        return content[nextIndex];
+      });
+    }, 5000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="container mx-auto text-center py-10">
+      {/* Heading */}
+      <h1 className="text-4xl md:text-6xl font-bold pb-6">Financial Education</h1>
+
+      {/* Icons Row */}
+      <div className="flex justify-center gap-8 py-6 flex-wrap md:flex-nowrap">
+        {content.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-col items-center cursor-pointer transition-all duration-300 ${
+              selected.title === item.title ? "text-green-500 scale-110" : "text-gray-700"
+            }`}
+            onClick={() => setSelected(item)}
+          >
+            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 hover:bg-green-200 text-2xl p-4">
+              {item.icon}
+            </div>
+            <p className="mt-2 text-lg font-semibold">{item.title}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Description & Image Section */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={selected.title}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.7 }}
+          className="grid md:grid-cols-2 gap-8 px-6 md:px-20 pt-8"
+        >
+          {/* Left Side: Description */}
+          <div className="text-left">
+            <h2 className="text-3xl font-bold pb-3">{selected.title}</h2>
+            <p className="text-lg text-gray-700 leading-relaxed">{selected.description}</p>
+            <ul className="list-disc  ml-8 pl-8 pb-4 pt-0.5 rounded-lg text-gray-700">
+              {selected.points.map((point, index) => (
+                <li key={index} className="py-1 rounded-xl px-4 bg-green-100 m-2">{point}</li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right Side: Image */}
+          <div className="flex justify-center">
+            <Image
+              src={selected.image}
+              alt={selected.title}
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg object-cover"
+            />
+          </div>
+        </motion.div>
+      </AnimatePresence>
+    </div>
+  );
+};
+
+export default FinancialEducation;

@@ -56,14 +56,7 @@
     --chart-5: 340 75% 55%
   }
 }
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+
 
 .border-yellow-500 {
   border-color: #facc15;
@@ -91,4 +84,25 @@
 /* Hide scrollbar for Firefox */
 .scrollbar-hide {
   scrollbar-width: none;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.slide-in {
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

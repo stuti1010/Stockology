@@ -58,7 +58,8 @@ const config: Config = {
   		},
   		animation: {
   			orbit: 'orbit calc(var(--duration)*1s) linear infinite',
-  			shine: 'shine var(--duration) infinite linear'
+  			shine: 'shine var(--duration) infinite linear',
+			  scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
   		},
   		keyframes: {
   			orbit: {
@@ -67,6 +68,11 @@ const config: Config = {
   				},
   				'100%': {
   					transform: 'rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))'
+  				}
+  			},
+			'scroll': {
+  				to: {
+  					transform: 'translate(calc(-50% - 0.5rem))'
   				}
   			},
   			shine: {
