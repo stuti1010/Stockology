@@ -2,7 +2,7 @@ import React from "react";
 
 const Footerend = () => {
   return (
-    <div className="container mx-auto bg-[#151e31] text-white py-7 px-3 ">
+    <div className="container mx-auto bg-green-200 text-gray-700 py-7 px-3 ">
       <div className="max-w-7xl mx-auto">
         <h1 className="">
           {" "}
@@ -114,9 +114,7 @@ const Footerend = () => {
           SEBI, and certification from NISM in no way guarantee performance of
           the intermediary or provide any assurance of returns to investors.
         </p>
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-          <p>©2023 Stockology. All rights reserved.</p>
-        </div>
+      
       </div>
     </div>
   );

@@ -121,7 +121,7 @@ const page = () => {
     <div className="text-center md:text-left space-y-6 w-full md:w-1/2">
       {/* Brokerage Calculator */}
       <div className="bg-green-50 p-5 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-        <h1 className="text-lg sm:text-xl md:text-3xl font-extrabold text-gray-900">
+        <h1 className="text-lg sm:text-xl md:text-3xl font-semibold text-gray-900">
           📊 Brokerage Calculator
         </h1>
         <p className="text-gray-700 pt-2 sm:pt-3 text-sm sm:text-base">
@@ -137,7 +137,7 @@ const page = () => {
 
       {/* Margin Calculator */}
       <div className="bg-green-50 p-5 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-        <h1 className="text-lg sm:text-xl md:text-3xl font-extrabold text-gray-900">
+        <h1 className="text-lg sm:text-xl md:text-3xl font-semibold text-gray-900">
           📈 Margin Calculator
         </h1>
         <p className="text-gray-700 pt-2 sm:pt-3 text-sm sm:text-base">

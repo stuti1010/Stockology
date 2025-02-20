@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Cards from "@/components/Card";
-// import Footerend from "@/components/Footerend";
+import Footerend from "@/components/Footerend";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,7 +36,7 @@ export default function RootLayout({
         {children}
 
         <Footer />
-        {/* <Footerend/> */}
+        <Footerend/>
       </body>
     </html>
   );

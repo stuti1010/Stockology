@@ -2,16 +2,14 @@
  
 // import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
-import { FaCheckCircle } from "react-icons/fa";
-import { GiGrowth } from "react-icons/gi";
+
 import { AiOutlineStock } from "react-icons/ai";
 import { TbSteam } from "react-icons/tb";
 import { GiHiveMind } from "react-icons/gi";
 import { SiKnowledgebase } from "react-icons/si";
-import { FaRegLightbulb } from "react-icons/fa";
-import { BsFillLightningChargeFill } from "react-icons/bs";
+
 import { FaUserLock } from "react-icons/fa";
-import { FaUsersRays } from "react-icons/fa6";
+
 const testimonials = [
   {
     quote:

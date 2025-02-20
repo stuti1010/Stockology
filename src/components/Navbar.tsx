@@ -7,7 +7,7 @@ import { ShimmerButtonDemo } from "./Dematebutton";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState<number | null>(null); // Track which dropdown is open
+  const [showDropdown, setShowDropdown] = useState< String | number | null>(null); // Track which dropdown is open
   const [showMobileMenu, setShowMobileMenu] = useState(false); // State for mobile menu
   const router = useRouter();
 
@@ -68,7 +68,7 @@ const Navbar = () => {
           <img
             src="/stklogo.png"
             alt="Logo"
-            className="md:w-28 md:h-24 h-20 w-24 py-2 object-fill"
+            className="md:w-28 md:h-24 h-16 w-16 py-2 object-fill"
           />
           {/* <h1 className=" text-lg font-bold">Stockology</h1> */}
         </div>
@@ -104,7 +104,7 @@ const Navbar = () => {
                     ? toggleDropdown(Number(item.id))
                     : handleClick(item.href)
                 }
-                className=" px-4 py-2 md:text-lg hover:bg-white rounded-full hover:text-black  font-medium transition duration-300 w-full text-left flex justify-between items-center"
+                className=" px-4 py-2 md:text-lg hover:bg-white rounded-full hover:text-black  font-semibold transition duration-300 w-full text-left flex justify-between items-center"
               >
                 {item.label}
                 {item.type === "dropdown" && <span className="ml-2">▼</span>}

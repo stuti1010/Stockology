@@ -14,13 +14,13 @@ export const footerData = {
     offering: [
       { name: "Technical", path: "/offering/technical" },
       { name: "Blog", path: "/blog" },
-      { name: "Pricing", path: "/pricing" },
-      { name: "Terms & Conditions", path: "/terms" },
+      { name: "Pricing", path: "/Pricing" },
+      { name: "Terms & Conditions", path: "/term-condition" },
     ],
     quickLinks: [
-      { name: "Privacy Policy", path: "/privacy-policy" },
+      { name: "Privacy Policy", path: "/Privacy-Policy" },
       { name: "Refund Policy", path: "/refund-policy" },
-      { name: "Terms & Conditions", path: "/terms" },
+      { name: "Terms & Conditions", path: "/term-condition" },
     ],
     contact: {
       address: "Krishna Business Center, Indore",

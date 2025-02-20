@@ -214,17 +214,17 @@ function renderTable(data: any[], headers: string[]) {
         </TableHead>
 
         <TableBody>
-          {data.map((row, rowIndex) => (
-            <TableRow
-              key={rowIndex}
-              sx={{ "&:nth-of-type(odd)": { backgroundColor: "#fafafa" } }}
-            >
-              {Object.values(row).map((value, colIndex) => (
-                <TableCell key={colIndex}>{value}</TableCell>
-              ))}
-            </TableRow>
-          ))}
-        </TableBody>
+  {data.map((row, rowIndex) => (
+    <TableRow
+      key={rowIndex}
+      sx={{ "&:nth-of-type(odd)": { backgroundColor: "#fafafa" } }}
+    >
+      {Object.values(row).map((value, colIndex) => (
+        <TableCell key={colIndex}>{value as React.ReactNode}</TableCell>
+      ))}
+    </TableRow>
+  ))}
+</TableBody>
       </Table>
       <h1 className="p-4 text-sm sm:text-base text-gray-600">
         {" "}
