@@ -23,7 +23,7 @@ const Corevalue2 = () => {
       </p>
       </div>
 
-<img src="/Corevalue.png" className="md:w-4/5 relative z-10 sm:w-3/5 md:h-[500px] flex justify-center items-center object-contain md:ml-24 sm:ml-0 ml-14 "></img>
+<img src="/CoreValue.png" className="md:w-4/5 relative z-10 sm:w-3/5 md:h-[500px] flex justify-center items-center object-contain md:ml-24 sm:ml-0 ml-14 "></img>
       
     </div>
   );

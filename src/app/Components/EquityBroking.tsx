@@ -16,7 +16,7 @@ const EquityBroking = () => {
        
         <div className="absolute md:w-[110%] w-[90%] h-[370px] md:h-[550px] z-0  flex justify-center items-center">
           <Image
-            src="/vector.svg"
+            src="/Vector.svg"
             layout="fill"
             objectFit="contain"
             className="opacity-70"
