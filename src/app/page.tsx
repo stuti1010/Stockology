@@ -5,7 +5,7 @@ import { Testimonials } from "./Components/Testimonals";
 import Visionandmision from "./Components/Visionandmision";
 
 import CoreValues2 from "./Components/Corevalue2";
-import Blog from "./Components/Blogs";
+
 
 export default function Home() {
   return (
