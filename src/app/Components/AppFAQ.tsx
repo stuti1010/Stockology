@@ -4,7 +4,8 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'What is Stockology?',
+  
+    question: ' What is Stockology?',
     answer:
       "Stockology is a cutting-edge stock market platform that provides real-time data, insights, and analysis to help investors make informed decisions. Our goal is to simplify trading and investing for everyone.",
   },
@@ -14,18 +15,27 @@ const faqs = [
       "Stockology gathers data from multiple reliable sources, processes it using advanced algorithms, and presents it in an easy-to-understand format. We offer market trends, technical analysis, and expert opinions to help users make the best decisions.",
   },
   {
-    question: 'Is Stockology free to use?',
+    question: 'What documents do I need to sign up?',
     answer:
-      "Yes, Stockology offers a free plan with essential market insights. However, we also have premium subscriptions that provide advanced features, including in-depth analysis, personalized alerts, and exclusive reports.",
+      "You may need a government-issued ID(passport, driver's license),prrof of address, and a tax identification number.",
   },
   {
-    question: 'How accurate are the stock predictions on Stockology?',
+    question: 'What types of investments are available?',
     answer:
-      "While no prediction can be 100% accurate, Stockology uses cutting-edge AI and machine learning models to analyze market patterns and historical data, providing highly reliable insights and trend forecasts.",
+      "You can trade stocks, ETFs, mutual funds, options, futures, cryptocurrencies and bonds, depending on the app's offerings",
   },
   {
-    question: 'How can I subscribe to premium features?',
-    answer: 'You can subscribe to our premium plans directly through the Stockology website. Simply choose a plan that suits your needs, complete the payment process, and gain access to exclusive stock market insights and tools.',
+    question: 'Are there any commision fees?',
+    answer: "Many apps offer commission-free trading, but some advanced features or specific markets may have fees.Check the app's fee schedule",
+  },
+  {
+    question: 'Is my money safe?',
+    answer:
+      "Yes, the app is regulated by financial authorities and usses encryption for security.Funds are insecured up to a certain amount.",
+  },
+  {
+    question: 'Are there any withdrawal fees ? And how long do withdrawal take?',
+    answer: 'Some apps charge a withdrawal fee, check the fee schedule for details. Withdrawals typically take 1-5 business days, depending on the methods used.',
   },
 ];
 
@@ -37,17 +47,17 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="bg-[url('/leftsideimg.jpg')] bg-cover bg-no-repeat bg-fixed  text-black py-16 px-4 sm:px-6 lg:px-8 w-full flex justify-center">
+    <div className="bg-[url('/leftsideimg.jpg')] bg-cover bg-no-repeat bg-fixed  text-black py-12 px-4 sm:px-6 lg:px-8 w-full flex justify-center">
       <div className="max-w-3xl w-full">
         <header className="mb-10 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-green-500">FAQs</h2>
           <p className="text-lg text-gray-800 mt-2">Answers to the most frequently asked questions.</p>
         </header>
-        <div className="space-y-6">
+        <div className="space-y-5">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-900 pb-4">
               <button
-                className="w-full flex text-green-600  justify-between items-center text-lg font-medium focus:outline-none py-2"
+                className="w-full flex text-green-600  justify-between items-center text-lg font-medium focus:outline-none "
                 onClick={() => toggleFAQ(index)}
               >
                 {faq.question}

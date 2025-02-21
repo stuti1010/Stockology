@@ -43,7 +43,7 @@ const IPOInvestments = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <Image src='/IPObanner.png' width={800} height={600} alt='IPO Banner' className='rounded-xl md:pt-4 md:max-w-2xl lg:max-w-4xl w-lg' />
+          <Image src='/IPOBanner.png' width={800} height={600} alt='IPO Banner' className='rounded-xl md:pt-4 md:max-w-full lg:max-w-4xl w-lg' />
         </motion.div>
       </div>
       

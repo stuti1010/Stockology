@@ -42,18 +42,21 @@ export default function MeetOurDirectors() {
   const currentDirector = teamMembers.find((member) => member.id === activeDirector);
 
   return (
-    <div className="py-10 px-4 md:px-10 container mx-auto text-center">
-      <h1 className="md:text-4xl text-2xl font-bold text-gray-900 md:mb-8">Board of Directors</h1>
+    <div className=" py-10 px-4 md:px-10 container mx-auto text-center  ">
 
+      <h1 className="md:text-4xl text-2xl font-bold text-gray-900 md:mb-3">Board of Directors</h1>
+<h1 className="md:text-xl text-lg font-semibold text-green-600 ">
+  &ldquo;The Board of Directors steers the company&apos;s vision, ensuring strategic growth, governance, and long-term success.&rdquo;
+  </h1>
       <div className="flex flex-col md:flex-row items-center justify-center md:gap-12 gap-4">
-        {/* Circular Layout with Icons */}
-        <div className="relative w-full md:w-1/2 h-[400px] flex items-center justify-center">
-        {/* Background Image with Text */}
+   
+        <div className="relative w-full md:w-1/2 h-[400px] flex items-center justify-center ">
+      
         <div className="absolute inset-0 z-0">
             <img
               src="/bg.png"
               alt="Background"
-              className="w-full h-full object-contain opacity-40"
+              className="w-full h-full object-contain opacity-50"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h2 className="md:text-3xl text-2xl  font-bold text-black">Stockology</h2>
@@ -80,7 +83,7 @@ export default function MeetOurDirectors() {
                   className={clsx(
                     "w-10 h-10 md:w-16 md:h-16 rounded-full object-cover border-2 shadow-md transition-all transform hover:scale-110",
                     activeDirector === member.id
-                      ? "border-black scale-125 shadow-lg"
+                      ? "border-green-400 scale-125 shadow-lg"
                       : "border-gray-300 grayscale opacity-75"
                   )}
                 />
@@ -90,20 +93,24 @@ export default function MeetOurDirectors() {
         </div>
 
         {/* Director Details Card */}
-        <Card className="w-72 md:w-1/3 h-auto bg-white shadow-lg rounded-xl border border-gray-200 p-6 transition-all transform hover:scale-105">
-          <CardContent>
-            <div className="flex flex-col items-center text-center">
-              <img
-                src={currentDirector?.image}
-                alt={currentDirector?.name}
-                className="md:w-24 md:h-24 h-20 w-20 rounded-full border-2 border-black shadow-lg mb-2"
-              />
-              <h2 className="text-xl font-semibold text-gray-900 ">{currentDirector?.name}</h2>
-              <p className="text-green-600 font-medium">{currentDirector?.role}</p>
-              <p className="mt-3 text-gray-600">{currentDirector?.description}</p>
-            </div>
-          </CardContent>
-        </Card>
+        
+        <Card className="w-72 md:w-1/3 h-auto shadow-lg rounded-xl border border-green-100 shadow-green-300 p-6 transition-all transform hover:scale-105">
+  <CardContent>
+    <div className="relative bg-[url('/bg12.jpeg')] bg-cover bg-no-repeat w-full h-full p-4 rounded-lg">
+      <div className="flex flex-col items-center text-center">
+        <img
+          src={currentDirector?.image}
+          alt={currentDirector?.name}
+          className="md:w-24 md:h-24 h-20 w-20 rounded-full border-2 border-green-300 shadow-lg mb-2"
+        />
+        <h2 className="text-xl font-bold text-gray-900">{currentDirector?.name}</h2>
+        <p className="text-green-600 font-semibold ">{currentDirector?.role}</p>
+        <p className="mt-3 text-gray-800 font-medium">{currentDirector?.description}</p>
+      </div>
+    </div>
+  </CardContent>
+</Card>
+
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Banner() {
   return (
     <motion.div
-      className="relative w-full h-40 max-w-7xl mx-auto flex rounded-2xl items-center justify-center overflow-hidden bg-gradient-to-r from-green-500 to-red-500 text-white"
+      className="relative w-full h-40  flex rounded-md items-center justify-center overflow-hidden bg-gradient-to-r from-green-500 to-red-500 text-white"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

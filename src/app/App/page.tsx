@@ -80,7 +80,7 @@ export default function App() {
       </section>
 
       {/**second section */}
-      <div className="flex flex-col lg:flex-row items-center justify-center py-6  bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/second-planbg.png')", backgroundSize: 'cover',
+      <div className="flex flex-col px-3 lg:flex-row items-center justify-center py-6  bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/second-planbg.png')", backgroundSize: 'cover',
           width: '100%',maxWidth:"1600px" }}  
           >
         
@@ -91,7 +91,7 @@ export default function App() {
           transition={{ duration: 0.8 }} 
           className="relative w-96 md:w-[550px] lg:w-[500px] h-auto"
         >
-         <h1 className=" top-5 left-0 text-xl md:text-2xl font-bold">📲 Explore Stockology’s Mobile App</h1>
+         <h1 className=" top-5 left-0 text-xl md:text-2xl font-bold">📲 Explore Stockology&apos;s Mobile App</h1>
           {/* Mobile Background */}
           <img src="/mobile1.png" alt="Mobile Mockup" className="w-full h-auto max-w-full" />
 
@@ -112,7 +112,7 @@ export default function App() {
           initial={{ opacity: 0, x: 50 }} 
           animate={{ opacity: 1, x: 0 }} 
           transition={{ duration: 0.8 }} 
-          className="flex flex-row md:flex-col gap-6 "
+          className="flex  flex-col gap-4 "
         >
           {features.map((feature, index) => (
             <motion.div 
@@ -245,13 +245,13 @@ export default function App() {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="text-lg pl-16 text-gray-200 max-w-xl leading-relaxed "
+        className="md:text-lg md:pl-16   text-gray-200 max-w-xl leading-relaxed "
       >
         Stockology offers a seamless and intelligent **stock trading experience**, empowering you with **real-time alerts, AI-powered insights, and zero-commission trades** to maximize your investments.
       </motion.p>
 
       {/* Benefits List */}
-      <div className="flex  justify-center max-w-7xl items-center mx-auto gap-6 text-white ">
+      <div className="md:flex  justify-center max-w-7xl items-center mx-auto gap-6 sm:space-y-0 space-y-2 text-white ">
         {[
           { icon: "📊", title: "Real-Time Alerts", desc: "Stay ahead with instant market notifications." },
           { icon: "🤖", title: "AI Insights", desc: "Smart recommendations tailored to your trading style." },
@@ -265,7 +265,7 @@ export default function App() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="flex items-center space-x-1 p-2 bg-white/10 backdrop-blur-md rounded-lg shadow-md  "
+            className="flex items-center space-x-1  p-2 bg-white/10 sm:gap-0 gap-4 rounded-lg shadow-md  "
           >
             <span className="text-4xl">{item.icon}</span>
             <div>
@@ -288,11 +288,11 @@ export default function App() {
       </motion.p>
     </div>
 
-      <div className='py-3'>
+      <div className='py-2'>
       <Value/>
         </div> 
 
-        <div className='py-3'>
+        <div className=''>
 <FAQSection/>
         </div>
 

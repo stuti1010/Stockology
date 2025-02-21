@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import { FaChartLine, FaExchangeAlt, FaCubes, FaChartPie, FaShieldAlt } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -8,7 +7,7 @@ const content = [
     title: "Equity Market",
     description:
       "The equity market, or stock market, is where shares of publicly listed companies are bought and sold. Investors buy shares to own a part of a company, and they earn profits through price appreciation and dividends.",
-    image: "/FE3.jpg",
+    image: "/equity101.svg",
     icon: <FaChartLine />,
     points: ["Invest in shares", "Earn dividends", "Long-term growth potential"],
   },
@@ -16,7 +15,7 @@ const content = [
     title: "Derivative Market",
     description:
       "Derivatives are financial contracts whose value depends on the price of an underlying asset, such as stocks, commodities, or interest rates. The most common types of derivatives are options, futures, and swaps.",
-    image: "/FE1.jpg",
+    image: "/equity105.svg",
     icon: <FaExchangeAlt />,
     points: ["Manage risk", "Leverage trading", "High potential returns"],
   },
@@ -24,7 +23,7 @@ const content = [
     title: "Commodity Market",
     description:
       "The commodity market involves trading raw materials or primary agricultural products like oil, gold, silver, wheat, and natural gas.",
-    image: "/FE2.jpg",
+    image: "/equity104.svg",
     icon: <FaCubes />,
     points: ["Trade raw materials", "Hedge against inflation", "Diverse asset classes"],
   },
@@ -32,7 +31,7 @@ const content = [
     title: "Investment Strategy",
     description:
       "Investment strategy refers to the approach an investor uses to meet their financial goals. This includes asset selection, diversification, risk management, and time horizon.",
-    image: "/FE.jpg",
+    image: "/equity103.svg",
     icon: <FaChartPie />,
     points: ["Diversification", "Risk management", "Long-term planning"],
   },
@@ -40,7 +39,7 @@ const content = [
     title: "Hedging",
     description:
       "Hedging is a risk management strategy used to offset potential losses in investments by taking an opposite position in a related asset.",
-    image: "/FE3.jpg",
+    image: "/equity102.svg",
     icon: <FaShieldAlt />,
     points: ["Reduce investment risk", "Use derivatives", "Protect assets"],
   },
@@ -108,12 +107,11 @@ const FinancialEducation = () => {
 
           {/* Right Side: Image */}
           <div className="flex justify-center">
-            <Image
+            <img
               src={selected.image}
               alt={selected.title}
-              width={400}
-              height={300}
-              className="rounded-lg shadow-lg object-cover"
+             
+              className="rounded-lg shadow-lg md:w-[450px] md:h-[300px] w-[250px] h-[200px] shadow-green-100 object-contain  transition-all "
             />
           </div>
         </motion.div>

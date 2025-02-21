@@ -5,17 +5,25 @@ import { Testimonials } from "./Components/Testimonals";
 import Visionandmision from "./Components/Visionandmision";
 
 import CoreValues2 from "./Components/Corevalue2";
+import Blog from "./Components/Blogs";
 
 export default function Home() {
   return (
     <>
     <Mockup/>
+
     <CardHoverEffectDemo/>
+
     <Visionandmision/>
+<div className="sm:mt-0 mt-5">
+  <CoreValues2/>
+  </div>
+    
+    
 
     <Testimonials/>
     
-<CoreValues2/>
+
 
     </>
   );

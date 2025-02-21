@@ -1,86 +1,55 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const content = [
-  {
-    title: "Future And Options",
-    description:
-      "Futures and Options (F&O) are derivatives that allow traders to hedge risks, leverage capital, and maximize returns in the stock market.",
-    image: "/service15.jpg",
-  },
-  {
-    title: "IPO Investments",
-    description:
-      "An IPO is the process through which a private company offers its shares to the public for the first time. Investing in IPOs can be a great way to enter at an early stage and gain long-term returns.",
-    image: "/service11.jpg",
-  },
-  {
-    title: "NRI & NRO Acoounts",
-    description:
-      "We provide seamless stock market access for Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs). Whether you want to trade stocks, invest in IPOs, or diversify through mutual funds, our NRI/NRO trading accounts offer convenience and flexibility.",
-    image: "/service14.jpg",
-  },
-  {
-    title: "Equity Trading",
-    description:
-      "Equity trading involves buying and selling stocks in the stock market to gain returns. As a shareholder, you own a part of the company and benefit from its growth through capital appreciation and dividends.",
-    image: "/service13.jpg",
-  },
-  
+  { title: "Future & Options", description: "Trade derivatives smartly with our expert guidance." },
+  { title: "IPO Investments", description: "Gain early access to high-growth potential companies." },
+  { title: "NRI & NRO Accounts", description: "Seamless trading solutions for global investors." },
+  { title: "Equity Trading", description: "Invest in stocks with strategic insights and risk management." },
 ];
 
 const EquityBroking = () => {
   return (
-    <div className="py-10 px-5 md:px-16 container mx-auto">
-      {/* Heading */}
-      <div className="text-center">
-        <h1 className="text-4xl md:text-6xl font-bold">Equity Broking</h1>
-        <p className="text-gray-700 text-lg mt-4 max-w-2xl mx-auto">
-          We provide personalized equity broking services, enabling investors to make informed decisions about buying and selling shares while maximizing returns and minimizing risks.
-        </p>
+    <div className="py-10 px-1 md:px-14 container mx-auto flex flex-col md:flex-row items-center">
+      <div className="md:w-1/3 mb-8 md:mb-0 relative flex justify-center items-center">
+       
+        <div className="absolute md:w-[110%] w-[90%] h-[370px] md:h-[550px] z-0  flex justify-center items-center">
+          <Image
+            src="/vector.svg"
+            layout="fill"
+            objectFit="contain"
+            className="opacity-70"
+            alt="Background"
+          />
+        </div>
+        <Image src="/equity01.png" width={600} height={600} className="w-full md:h-[450px] h-[280px] relative z-10" alt="Equity Broking" />
       </div>
 
-      {/* Services Grid */}
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-        {content.map((item, index) => (
-          <div key={index} className="flex flex-col md:flex-row items-center gap-6">
-            {/* Image on alternating sides */}
-            {index % 2 === 1 ? (
-              <>
-                <div className="md:w-1/2">
-                  <h2 className="text-2xl font-semibold">{item.title}</h2>
-                  <p className="text-gray-700 mt-2">{item.description}</p>
-                </div>
-                <div className="md:w-1/2">
-                  <Image
-                    src={item.image}
-                    width={500}
-                    height={300}
-                    className="rounded-lg shadow-md object-cover w-full"
-                    alt={item.title}
-                  />
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="md:w-1/2">
-                  <Image
-                    src={item.image}
-                    width={500}
-                    height={300}
-                    className="rounded-lg shadow-md object-cover w-full"
-                    alt={item.title}
-                  />
-                </div>
-                <div className="md:w-1/2">
-                  <h2 className="text-2xl font-semibold">{item.title}</h2>
-                  <p className="text-gray-700 mt-2">{item.description}</p>
-                </div>
-              </>
-            )}
+      <motion.div className="md:w-2/3 px-8"
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}>
+        <div className=" flex items-center gap-3">
+       <video width="120" height="120" autoPlay loop muted className="rounded-full  ">
+            <source src="/equity.mp4" type="video/mp4" />
+          </video>
+        <h1 className="md:text-5xl text-2xl font-bold">Equity Broking</h1></div>
+        <p className="text-gray-700  md:text-xl text-lg">
+          Personalized equity broking services to help investors make informed decisions, maximize returns, and manage risks effectively.
+        </p>
+        <div className="md:px-8 px-3">
+          <div className="mt-6 space-y-6 md:max-w-xl ">
+            {content.map((item, index) => (
+              <motion.div key={index} className="border-b px-6 py-4 bg-green-400/40 rounded-3xl transition duration-300"
+              whileHover={{ scale: 1.05 }}>
+                <h2 className="text-xl font-semibold">{item.title}</h2>
+                <p className="text-gray-600">{item.description}</p>
+              </motion.div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      </motion.div>
     </div>
   );
 };

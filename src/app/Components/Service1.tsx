@@ -53,13 +53,8 @@ const links=[
 
 const Service1 = () => {
   return (
-    <div className='container mx-auto'>
-      <div className="flex items-center justify-center  w-full ">
-      <FloatingDock
-        mobileClassName="translate-y-24 " 
-        items={links}
-      />
-    </div>
+    <div className="container mx-auto">
+      <FloatingDock items={links} />
     </div>
   )
 }

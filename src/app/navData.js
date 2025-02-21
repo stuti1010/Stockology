@@ -35,16 +35,16 @@ export const navData = [
     //     },
     //   ],
     },
-    {
-      id: 5,
-      label: "Partner",
-      href: "/Partner",
-      type: "link",
-    },
+    // {
+    //   id: 5,
+    //   label: "Partner",
+    //   href: "/Partner",
+    //   type: "link",
+    // },
     {
       id: 6,
       label: "Contact Us",
-      href: "/Contact-us",
+      href: "/Contact",
       type: "link",
     },
     {

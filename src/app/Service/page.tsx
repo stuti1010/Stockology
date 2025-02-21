@@ -57,7 +57,7 @@ const Page = () => {
         transition={{ duration: 1, delay: 0.5 }}
         className="text-center py-12"
       >
-        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 ">Our Services</h3>
+        <h3 className="text-2xl md:text-4xl font-bold text-gray-900 ">Our Services</h3>
         <p className="mt-4 text-lg text-gray-700">
           We offer a range of tax consulting services tailored to your needs.
         </p>
@@ -84,7 +84,7 @@ const Page = () => {
 {/**second section */}
 <div className="pt-8">
 <div className="text-center mb-14 pt-2">
-        <h2 className="text-4xl font-bold tracking-wide text-black">
+        <h2 className="md:text-4xl text-2xl font-bold tracking-wide text-black">
           We Provide Variety Of Services
         </h2>
         <p className="text-gray-900  text-semibold mt-3">
@@ -98,20 +98,17 @@ const Page = () => {
   <EquityBroking/>
 </div>
 
-<div className="py-4">
+<div className="py-2">
   <IPO/>
 </div>
 
-<div className="py-4">
   <MutualFunds/>
-</div>
 
-<div className="py-4">
+
+<div className="py-2">
   <FinancialEducation/>
 </div>
-{/* <div className="py-4">
-  <Insurance/>
-</div> */}
+
 <div className="py-2">
 <MobileOnline/>
 </div>

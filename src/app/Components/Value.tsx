@@ -27,18 +27,18 @@ const Value = () => {
                 We value trust above everything
               </h1>
               <p className="text-gray-800 lg:text-xl md:text-sm py-3">
-                Discover why lakhs of customers choose to invest with STOCKOLOGY
+                Discover why  customers choose to invest with STOCKOLOGY
               </p>
             </div>
           </div>
           
           {/* right */}
           <div className="flex justify-center"> 
-            <div className='md:grid grid-cols-2 gap-8'>
-              <div className='mt-5'><Card name={'Wealth Management'}/></div>
-              <div className='mt-5'><Card name={'Equity Broking'}/> </div>
-              <div className='mt-5'><Card name={'Swift Loans'}/></div>
-              <div className='mt-5'><Card name={'Insurance Intellimart'}/></div>
+            <div className='md:grid grid-cols-2 md:gap-8'>
+              <div className='mt-5'><Card name={'Mutual Funds'}/></div>
+              <div className='mt-5'><Card name={'Bonds'}/> </div>
+              <div className='mt-5'><Card name={'Future & Options'}/></div>
+              <div className='mt-5'><Card name={'NRI & NRO accounts'}/></div>
             </div>
           </div> 
         </div>

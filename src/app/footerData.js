@@ -9,12 +9,12 @@ export const footerData = {
     company: [
       { name: "Our Team", path: "/company/team" },
       { name: "Investor", path: "/company/investor" },
-      { name: "Calculator", path: "/company/calculator" },
+      { name: "Calculator", path: "/Calculator" },
     ],
     offering: [
       { name: "Technical", path: "/offering/technical" },
       { name: "Blog", path: "/blog" },
-      { name: "Pricing", path: "/pricing" },
+      { name: "Pricing", path: "/Pricing" },
       { name: "Terms & Conditions", path: "/terms" },
     ],
     quickLinks: [
@@ -26,7 +26,7 @@ export const footerData = {
       address: "Krishna Business Center, Indore",
       phone: "+9145567899",
       email: "stockology@gmail.com",
-      workingHours: "Monday - Saturday: 10:00 am - 7:00 pm",
+      workingHours: "Monday - Saturday: 9:00 am - 6:00 pm",
     },
     socialLinks: [
       { icon: "FaInstagram", path: "#" },

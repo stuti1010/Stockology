@@ -5,7 +5,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto px-3 ">
         <div className="relative flex w-full py-10 flex-col items-center justify-center overflow-hidden rounded-lg bg-background ">
       <p className="z-10 whitespace-pre-wrap text-center md:text-5xl text-2xl  font-semibold tracking-tighter text-black dark:text-white">
         <h1>All Your Finances, Simplified in One Spot</h1>
@@ -28,38 +28,40 @@ export const projects = [
   {
     title: "Mutual Funds",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "A streaming service where multiple investors invested together which is managed by a professional fund manager and return get shared based on the invested proportion.",
     link: "",
   },
   {
-    title: "Insurance",
+    title: "Bonds",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "A stable-income investment where Investor lends money to the issuers for a specific period at a fixed interest rate as they are the safe investments for long-term planning.",
     link: "",
   },
   {
-    title: "Loans",
+    title: "Initial Public Offerings(IPO)",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "A process in which any private company offers shares to investors to raise it's own capital and get listed on a stock exchange.",
     link: "",
   },
   {
-    title: "Bond",
+    title: "Algorithm Trading Framework(ATF)",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "ATF automates a stuctured system which provide predefined alogorithms that determine whento buy or sell stocks by analyzing real-time market data. ",
     link: "",
   },
   {
-    title: "NPS",
+    title: "Future & Option(F&O)",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      "A instruments which help traders and investors in gaining leverage in the market , speculate on price movements , and hedge risks.",
     link: "",
   },
+ 
   {
-    title: "IPO",
+    title: "NRI & NRO Accounts",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "When Non-Resident Indians(NRI) wants to invest in Indian stocks or manage trades in India , they use particular bank accounts like NR0(Non-Resident Ordinary).",
     link: "",
   },
+  
   
 ];

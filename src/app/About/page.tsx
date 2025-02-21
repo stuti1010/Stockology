@@ -1,18 +1,16 @@
 
 import MeetOurDirectors from "../Components/Directors";
-import Journey from "../Components/Journey1";
-import Team from "../Components/Team";
 import Timeline from "../Components/Timeline1";
 
 
 const About = () => {
     return (
         <div className="container mx-auto  ">
-        <div className="text-black py-12 px-6 items-center ">
+        <div className="text-black py-8 px-6 items-center ">
   {/* Motivational Quote */}
-  <div className="max-w-7xl mx-auto  text-center text-lg md:text-3xl font-semibold mb-16 shadow-2xl bg-gradient-to-r from-gray-800 via-gray-950 to-gray-800 rounded-2xl">
+  <div className="max-w-7xl mx-auto  text-center text-lg md:text-3xl font-semibold mb-10 shadow-2xl bg-gradient-to-r from-green-500 via-green-600 to-green-500 rounded-2xl">
     <h3 className="px-8 py-8 text-white italic ">
-      &ldquo;Investing is not about beating others at their game. It&apos;s about controlling yourself at your own game.&rdquo;
+      &ldquo;Wealth in the stock market flows from the impatient to the patient—it&apos;s not about timing, but time in the market.&rdquo;
     </h3>
   </div>
 
@@ -44,12 +42,12 @@ const About = () => {
     
       <MeetOurDirectors/>
 
-      <Team/>
+      {/* <Team/> */}
 
       <Timeline/>
 
 
-<Journey/>
+{/* <Journey/> */}
 
 
         </div>    

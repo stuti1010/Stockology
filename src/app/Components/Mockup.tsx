@@ -1,22 +1,15 @@
 "use client";
-import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+
+import { motion } from "framer-motion";
+
 import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
-import React, { useEffect, useState } from "react";
+
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { RiStockFill } from "react-icons/ri";
 
 const Mockup = () => {
-  const words = [
-    {
-      text: "Stockology secure your future  ",
-    },
-    {
-      text: "start investing now",
-      className: "text-green-500 ",
-    },
-  ];
-
-  const placeholders = ["Enter your number", "Enter your number"];
-
+  
+   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.value);
   };
@@ -25,65 +18,69 @@ const Mockup = () => {
     console.log("submitted");
   };
 
-  // State for the current image index
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  // List of images to slide
-  const images = [
-    "/mockup.svg",
-    "/md3.jpg",
-    "/mockup.svg",
-  ];
-
-  // Automatically change the image every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, [images.length]);
+  const placeholders = ["Enter your number", "Enter your number"];
 
   return (
-    <div className="container mx-auto bg-gray-100 rounded-2xl md:py-[86px] py-10 relative z-10">
+    <div className="container mx-auto  rounded-2xl md:py-[86px] py-10 relative px-3 z-10">
       <div className="md:grid grid-cols-2 max-w-7xl mx-auto sm:py-0 py-5 relative z-10">
         {/* Left Side */}
-        <div className="border bg-white mx-8 my-8 rounded-3xl">
-          <div className="px-7 md:py-24 py-14">
-            <div className="flex flex-col">
-              <TypewriterEffectSmooth words={words} />
-            </div>
-            <p className="text-xl font-medium text-gray-700">
-              Trusted by 1.3 Crore+ Indians
-            </p>
-            <div className="pt-6">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="md:text-6xl leading-snug text-3xl font-bold">
+            Stockology{" "}
+            <span className="text-green-500"> secure your future </span>
+            start investing now
+          </h1>
+          <p className="font-sans md:text-xl py-3 text-gray-800">
+            Shape Your Future with Smart Investments
+          </p>
+          <div className="">
+            {/* Card 1 */}
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ type: "spring", stiffness: 100 }}
+              className="flex my-5 md:mb-10 justify-center border p-3 rounded-xl shadow-lg bg-green-50 items-center"
+            >
+              <h1 className="md:text-5xl text-green-700 text-xl font-bold mr-2">
+                <RiStockFill />
+              </h1>
+              <p className="text-gray-700 w-[400px] md:text-lg text-xs">
+                Trade smartly, invest With Strategy — Stockology, Your Trusted
+                Brokerage Partner.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Form */}
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+           
+            <div className="">
               <PlaceholdersAndVanishInput
                 placeholders={placeholders}
                 onChange={handleChange}
                 onSubmit={onSubmit}
               />
             </div>
-            <p className="text-sm text-gray-700 pt-3">
-              By continuing, I accept stockology T&C and Privacy policy
+
+            <p className="text-sm mt-5 text-gray-600">
+              <span className="text-red-500">* </span>By continuing, I accept
+              Stockology
+              <a href="#" className="text-green-600 underline">
+                T&C and Privacy policy
+              </a>
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Right Side - Image Slider */}
-        <div className="mx-8 my-8 flex justify-center items-center relative overflow-hidden">
-          <div className="relative w-full h-[450px]">
-            {images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Slide ${index + 1}`}
-                className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 object-contain ${
-                  index === currentImageIndex ? "opacity-100" : "opacity-0"
-                }`}
-              />
-            ))}
-          </div>
-        </div>
       </div>
       <div>
         <BackgroundBeams />
