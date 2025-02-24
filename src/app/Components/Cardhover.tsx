@@ -7,7 +7,7 @@ export function CardHoverEffectDemo() {
   return (
     <div className="container mx-auto px-3 ">
         <div className="relative flex w-full py-10 flex-col items-center justify-center overflow-hidden rounded-lg bg-background ">
-      <p className="z-10 whitespace-pre-wrap text-center md:text-5xl text-2xl  font-semibold tracking-tighter text-black dark:text-white">
+      <p className="z-10 whitespace-pre-wrap text-center md:text-5xl text-3xl  font-semibold tracking-tighter text-primary dark:text-white">
         <h1>All Your Finances, Simplified in One Spot</h1>
       <div className="max-w-7xl mx-auto px-8">
       <HoverEffect items={projects} />

@@ -57,8 +57,8 @@ const Page = () => {
         transition={{ duration: 1, delay: 0.5 }}
         className="text-center py-12"
       >
-        <h3 className="text-2xl md:text-4xl font-bold text-gray-900 ">Our Services</h3>
-        <p className="mt-4 text-lg text-gray-700">
+        <h3 className="text-3xl md:text-5xl font-bold text-primary ">Our Services</h3>
+        <p className="mt-4 text-lg text-light">
           We offer a range of tax consulting services tailored to your needs.
         </p>
       
@@ -74,8 +74,8 @@ const Page = () => {
             whileHover={{ scale: 1.05 }}
             className="bg-white p-6 rounded-3xl shadow-lg border-l-8 border-green-500 hover:shadow-2xl hover:bg-gradient-to-r from-green-600 to-red-600 hover:text-white cursor-pointer"
           >
-            <h4 className="text-xl font-semibold">{service.title}</h4>
-            <p className="mt-2">{service.description}</p>
+            <h4 className="text-xl text-primary font-semibold">{service.title}</h4>
+            <p className="mt-2 text-light">{service.description}</p>
           </motion.div>
         ))}
       </div>
@@ -84,10 +84,10 @@ const Page = () => {
 {/**second section */}
 <div className="pt-8">
 <div className="text-center mb-14 pt-2">
-        <h2 className="md:text-4xl text-2xl font-bold tracking-wide text-black">
+        <h2 className="md:text-5xl text-3xl font-bold tracking-wide text-primary">
           We Provide Variety Of Services
         </h2>
-        <p className="text-gray-900  text-semibold mt-3">
+        <p className="text-light md:text-lg  text-semibold mt-3">
           We offer a variety of services to help your business grow.
         </p>
       </div>

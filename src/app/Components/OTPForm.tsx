@@ -30,14 +30,14 @@ export default function OTPForm() {
 
   return (
     <div className="bg-gradient-to-br from-green-50 to-red-50 p-8 py-16 rounded-2xl shadow-2xl max-w-md mx-auto mt-10 transform transition-all hover:scale-105">
-      <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">
+      <h2 className="text-4xl font-bold text-center mb-8 text-primary">
         Open Account Now
       </h2>
-      <label className="block text-gray-700 font-medium mb-3">
+      <label className="block text-light font-medium mb-3">
         Mobile Number
       </label>
-      <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-green-500 transition-all duration-300">
-        <span className="bg-gray-100 px-4 py-3 text-gray-600 font-medium">+91</span>
+      <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-secondary transition-all duration-300">
+        <span className="bg-gray-100 px-4 py-3 text-light font-medium">+91</span>
         <input
           type="tel"
           className="w-full px-4 py-3 focus:outline-none bg-transparent"
@@ -52,9 +52,9 @@ export default function OTPForm() {
           id="terms"
           checked={agreed}
           onChange={() => setAgreed(!agreed)}
-          className="w-5 h-5 text-green-500 rounded focus:ring-green-400"
+          className="w-5 h-5 text-secondary rounded focus:ring-secondary"
         />
-        <label htmlFor="terms" className="ml-3 text-gray-600 text-sm">
+        <label htmlFor="terms" className="ml-3 text-light text-sm">
           I agree & accept{" "}
           <a href="#" className="text-green-500 font-semibold hover:underline">
             T&C

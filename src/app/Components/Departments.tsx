@@ -39,7 +39,7 @@ export default function DepartmentRequest() {
       transition={{ duration: 0.5 }}
       className="max-w-5xl mx-auto p-8 bg-white bg-opacity-20  rounded-3xl shadow-xl shadow-green-100 border border-green-200 "
     >
-      <h2 className="text-3xl font-bold text-center text-green-900 mb-8">Get in Touch with a Department</h2>
+      <h2 className="text-3xl font-bold text-center text-primary mb-8">Get in Touch with a Department</h2>
 
       {/* Step Indicator */}
       <div className="flex justify-evenly items-center mb-6 space-x-4">
@@ -58,12 +58,12 @@ export default function DepartmentRequest() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">Select a Department:</h3>
+          <h3 className="text-xl font-semibold text-primary mb-4">Select a Department:</h3>
           <div className="grid grid-cols-2 gap-4">
             {Object.keys(departments).map((dept) => (
               <button
                 key={dept}
-                className="p-3 bg-white text-green-900 border border-green-500 rounded-lg shadow-lg hover:bg-green-500 hover:text-white transition duration-300"
+                className="p-3 bg-white text-primary border border-green-500 rounded-lg shadow-lg hover:bg-green-500 hover:text-white transition duration-300"
                 onClick={() => {
                   setSelectedDept(dept);
                   setStep(2);
@@ -103,7 +103,7 @@ export default function DepartmentRequest() {
             className="mt-6 text-gray-600 hover:text-gray-900 flex items-center"
             onClick={() => setStep(1)}
           >
-            <FaArrowLeft className="mr-2" /> Back
+            <FaArrowLeft className="mr-2 text-light" /> Back
           </button>
         </motion.div>
       )}
@@ -118,11 +118,11 @@ export default function DepartmentRequest() {
         >
           <FaBuilding className="text-green-600 text-4xl mx-auto mb-3" />
           <h3 className="text-2xl font-bold text-green-900">{selectedDept}</h3>
-          <p className="text-lg font-semibold text-gray-800 mt-2">Request Type: {selectedRequest}</p>
-          <p className="flex items-center justify-center gap-2 text-lg text-gray-700 mt-2">
+          <p className="text-lg font-semibold text-primary mt-2">Request Type: {selectedRequest}</p>
+          <p className="flex items-center justify-center gap-2 text-lg text-light mt-2">
             <FaEnvelope className="text-green-600" /> {departments[selectedDept]?.contact}
           </p>
-          <p className="flex items-center justify-center gap-2 text-lg text-gray-700 mt-1">
+          <p className="flex items-center justify-center gap-2 text-lg text-light mt-1">
             <FaPhoneAlt className="text-green-600" /> {departments[selectedDept]?.phone}
           </p>
           <button

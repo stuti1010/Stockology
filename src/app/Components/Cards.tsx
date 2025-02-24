@@ -52,7 +52,7 @@ const Cards: React.FC<CardsProps> = ({ name, image }) => {
         whileHover={{ scale: 1.1 }}
         transition={{ type: 'spring', stiffness: 300 }}
       />
-      <h1 className='text-center py-3 md:text-lg text-sm font-semibold'>{name}</h1>
+      <h1 className='text-center py-3 md:text-lg text-sm font-semibold text-primary'>{name}</h1>
     </motion.div>
   );
 };

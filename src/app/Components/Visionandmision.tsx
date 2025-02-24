@@ -36,8 +36,8 @@ const Vision = () => {
         >
           <div className=" border border-green-200 p-5 rounded-xl shadow-lg shadow-green-100  hover:shadow-green-200  hover:shadow-2xl">
             {" "}
-            <h1 className="md:text-4xl text-2xl font-bold mb-4">VISION</h1>
-            <p className="text-gray-700 md:text-lg text-sm">
+            <h1 className="md:text-4xl text-2xl font-bold mb-4 text-primary">VISION</h1>
+            <p className="text-light md:text-lg text-sm">
             Stockology aims to be India&apos;s most trusted plateform for empowering investors with real-time insights. 
             </p>
           </div>
@@ -71,8 +71,8 @@ const Vision = () => {
           whileHover={{ scale: 1.05 }}
         >
           <div className=" border border-green-200 p-5 rounded-xl shadow-lg shadow-green-100  hover:shadow-green-200  hover:shadow-2xl">
-            <h1 className="md:text-4xl text-2xl font-bold mb-4">MISSION</h1>
-            <p className="text-gray-700 md:text-lg text-sm">
+            <h1 className="md:text-4xl text-2xl font-bold mb-4 text-primary">MISSION</h1>
+            <p className="text-light md:text-lg text-sm">
               we aim to provide seamless access to stock market trends, investment strategies ensuring every user has power to navigate financial markets confidently.
             </p>
           </div>
@@ -89,8 +89,8 @@ const Vision = () => {
         whileHover={{ scale: 1 }}
       >
         <div className=" border border-green-200 p-5 rounded-xl shadow-lg shadow-green-100  hover:shadow-green-200  hover:shadow-2xl">
-          <h1 className="md:text-4xl text-2xl font-bold mb-4">VALUES</h1>
-          <p className="text-gray-700 max-w-lg md:text-lg text-sm">
+          <h1 className="md:text-4xl text-2xl font-bold mb-4 text-primary">VALUES</h1>
+          <p className="text-light max-w-lg md:text-lg text-sm">
              Stockology appears to initiate valuable investment strategies focusing on stock market analysis and investment approaches.
           </p>
         </div>

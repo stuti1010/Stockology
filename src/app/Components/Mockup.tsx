@@ -21,20 +21,20 @@ const Mockup = () => {
   const placeholders = ["Enter your number", "Enter your number"];
 
   return (
-    <div className="container mx-auto  rounded-2xl md:py-[86px] py-10 relative px-3 z-10">
-      <div className="md:grid grid-cols-2 max-w-7xl mx-auto sm:py-0 py-5 relative z-10">
+    <div className="container mx-auto  rounded-2xl md:py-[86px] py-20 relative px-3 z-10">
+      <div className="md:grid gap-10 grid-cols-2 max-w-7xl mx-auto sm:py-0 py-5 relative z-10">
         {/* Left Side */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="md:text-6xl leading-snug text-3xl font-bold">
+          <h1 className="md:text-6xl text-primary leading-snug text-3xl font-bold">
             Stockology{" "}
-            <span className="text-green-500"> secure your future </span>
+            <span className="text-secondary"> secure your future </span>
             start investing now
           </h1>
-          <p className="font-sans md:text-xl py-3 text-gray-800">
+          <p className="font-sans md:text-xl py-3 text-light">
             Shape Your Future with Smart Investments
           </p>
           <div className="">
@@ -48,7 +48,7 @@ const Mockup = () => {
               <h1 className="md:text-5xl text-green-700 text-xl font-bold mr-2">
                 <RiStockFill />
               </h1>
-              <p className="text-gray-700 w-[400px] md:text-lg text-xs">
+              <p className="text-light w-[400px] md:text-lg text-xs">
                 Trade smartly, invest With Strategy — Stockology, Your Trusted
                 Brokerage Partner.
               </p>
@@ -73,7 +73,7 @@ const Mockup = () => {
             <p className="text-sm mt-5 text-gray-600">
               <span className="text-red-500">* </span>By continuing, I accept
               Stockology
-              <a href="#" className="text-green-600 underline">
+              <a href="#" className="text-secondary underline">
                 T&C and Privacy policy
               </a>
             </p>
@@ -81,6 +81,21 @@ const Mockup = () => {
         </motion.div>
 
         {/* Right Side - Image Slider */}
+        <motion.div
+  initial={{ x: 50, opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{ duration: 2 }}
+  className=" flex justify-center items-center sm:mt-0 mt-5"
+>
+  <img
+    src="/homemockup1.svg"
+    alt=""
+    className="md:h-[500px] w-auto h-[250px] max-w-none object-contain  "
+  />
+</motion.div> 
+
+
+
       </div>
       <div>
         <BackgroundBeams />

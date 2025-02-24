@@ -44,8 +44,8 @@ export default function MeetOurDirectors() {
   return (
     <div className=" py-10 px-4 md:px-10 container mx-auto text-center  ">
 
-      <h1 className="md:text-4xl text-2xl font-bold text-gray-900 md:mb-3">Board of Directors</h1>
-<h1 className="md:text-xl text-lg font-semibold text-green-600 ">
+      <h1 className="md:text-5xl text-3xl font-bold text-primary md:mb-3">Board of Directors</h1>
+<h1 className="md:text-xl text-lg font-semibold text-secondary ">
   &ldquo;The Board of Directors steers the company&apos;s vision, ensuring strategic growth, governance, and long-term success.&rdquo;
   </h1>
       <div className="flex flex-col md:flex-row items-center justify-center md:gap-12 gap-4">
@@ -103,9 +103,9 @@ export default function MeetOurDirectors() {
           alt={currentDirector?.name}
           className="md:w-24 md:h-24 h-20 w-20 rounded-full border-2 border-green-300 shadow-lg mb-2"
         />
-        <h2 className="text-xl font-bold text-gray-900">{currentDirector?.name}</h2>
-        <p className="text-green-600 font-semibold ">{currentDirector?.role}</p>
-        <p className="mt-3 text-gray-800 font-medium">{currentDirector?.description}</p>
+        <h2 className="text-xl font-bold text-primary">{currentDirector?.name}</h2>
+        <p className="text-secondary font-semibold ">{currentDirector?.role}</p>
+        <p className="mt-3 text-light font-medium">{currentDirector?.description}</p>
       </div>
     </div>
   </CardContent>

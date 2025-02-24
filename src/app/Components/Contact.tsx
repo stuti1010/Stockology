@@ -25,13 +25,13 @@ export default function Contact() {
       >
         {/* Left side - Heading and description */}
         <div className="realtive w-full md:w-1/2 text-left z-10">
-          <h2 className="md:text-4xl lg:text-6xl text-3xl font-bold mb-4 text-black">Customer Support</h2>
-          <h3 className="font-semibold py-1  text-green-600 md:text-xl lg:text-2xl text-lg">Your Trading Companion - Anytime, Anywhere!</h3>
-          <p className="md:text-lg lg:text-xl  text-sm mb-6 md:pr-0 pr-6 text-black">
+          <h2 className="md:text-5xl  text-3xl font-bold mb-4 text-primary">Customer Support</h2>
+          <h3 className="font-semibold py-1  text-secondary md:text-xl lg:text-2xl text-lg">Your Trading Companion - Anytime, Anywhere!</h3>
+          <p className="md:text-lg lg:text-xl  text-sm mb-6 md:pr-0 pr-6 text-light">
           At Stockology, we understand that financial markets never sleep, and neither do your questions. Whether you need assistance with account setup, technical support, or investment guidance, our dedicated support team is here for you 24/7.
           </p>
-          <h3 className="text-green md:text-xl lg:text-2xl font-semibold py-1 ">How We Help You:</h3>
-          <p className="text-sm lg:text-xl md:pr-0 pr-6 ">✅ Instant Assistance - Get real-time support for your queries.<br/>
+          <h3 className=" md:text-xl lg:text-2xl font-semibold py-1 text-primary">How We Help You:</h3>
+          <p className="text-sm md:text-lg md:pr-0 pr-6 text-light">✅ Instant Assistance - Get real-time support for your queries.<br/>
          ✅ Technical Support - Facing issues with our platform? We&apos;ve got you covered.<br/>
        ✅ Investment Guidance - Need help understanding stocks? Our experts can assist.<br/>
        ✅ Account Management - Assistance with KYC, deposits, withdrawals, and more.</p>

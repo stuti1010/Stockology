@@ -18,10 +18,10 @@ const About = () => {
   <div className="max-w-7xl grid mx-auto grid-cols-1 md:grid-cols-2 gap-12 items-center">
     {/* Left Side - Stockology Info */}
     <div className="text-sm md:text-xl leading-relaxed rounded-3xl p-10 shadow-2xl bg-white transition-transform transform hover:scale-[1.02]">
-      <h2 className="text-2xl md:text-5xl font-bold mb-6 underline decoration-green-400 decoration-4">
-        About <span className="text-green-500">Stockology</span>
+      <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary">
+        About <span className="text-secondary">Stockology</span>
       </h2>
-      <p className="font-serif text-gray-800 py-4">
+      <p className="font-serif text-light py-4">
         Stockology is your gateway to understanding the stock market with precision and clarity. 
         We provide in-depth insights, market trends, and the latest strategies to help you make informed decisions. 
         Whether you&apos;re a beginner or an expert trader, Stockology empowers you to navigate the financial world with confidence.
@@ -45,9 +45,6 @@ const About = () => {
       {/* <Team/> */}
 
       <Timeline/>
-
-
-{/* <Journey/> */}
 
 
         </div>    

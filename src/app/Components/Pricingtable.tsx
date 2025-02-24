@@ -151,8 +151,8 @@ export default function MyTabs() {
                   fontWeight: "bold",
                   color: "#000",
                 },
-                "& .Mui-selected": { color: "#18aa4e" },
-                "& .MuiTabs-indicator": { backgroundColor: "#18aa4e" },
+                "& .Mui-selected": { color: "#22C55E" },
+                "& .MuiTabs-indicator": { backgroundColor: "#22C55E" },
               }}
             >
               <Tab label="Equity" value="1" />
@@ -195,7 +195,7 @@ export default function MyTabs() {
   );
 }
 
-// ✅ Reusable function to render any table dynamically
+
 function renderTable(data: unknown[], headers: string[]) {
   return (
     <TableContainer component={Paper} sx={{ boxShadow: 3 }}>
@@ -226,9 +226,9 @@ function renderTable(data: unknown[], headers: string[]) {
           ))}
         </TableBody>
       </Table>
-      <h1 className="p-4 text-sm sm:text-base text-gray-600">
+      <h1 className="p-4 text-sm sm:text-base text-light">
         {" "}
-        <span className="font-semibold text-black">
+        <span className="font-semibold text-primary">
           *Condition Applied:
         </span>{" "}
         The above charges are applicable for clients registered online. Charges

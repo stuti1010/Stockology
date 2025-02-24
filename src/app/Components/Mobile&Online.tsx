@@ -28,9 +28,9 @@ const MobileOnline = () => {
       </div>
 
       {/* Content Section */}
-      <div className="relative container mx-auto px-6 md:py-8 text-black">
+      <div className="relative container mx-auto px-6 md:py-8 text-primary">
         {/* Heading */}
-        <h1 className="text-2xl md:text-5xl font-bold mb-2">
+        <h1 className="text-3xl md:text-5xl font-bold mb-2">
           Mobile & Online Application Platform
         </h1>
 
@@ -48,7 +48,7 @@ const MobileOnline = () => {
             {/* Explore More Button */}
             <Link href="/App">
               <button 
-                className="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300 shadow-lg focus:outline-none"
+                className="mt-4 bg-secondary hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300 shadow-lg focus:outline-none"
                 aria-label="Explore Mobile Trading App"
               >
                 Explore More
@@ -58,7 +58,7 @@ const MobileOnline = () => {
 
           {/* Right Section - Description & Features */}
           <div>
-            <p className="text-lg text-gray-800 leading-relaxed mb-4">
+            <p className="text-lg text-light leading-relaxed mb-4">
               Trade seamlessly with a secure, user-friendly platform offering real-time updates, AI analytics, and advanced charting for all levels.
             </p>
 
@@ -66,12 +66,12 @@ const MobileOnline = () => {
             <div className="space-y-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center p-3 bg-black bg-opacity-20 rounded-2xl">
-                  <div className="w-12 h-12 flex items-center justify-center bg-green-600 rounded-full mr-4">
+                  <div className="w-12 h-12 flex items-center justify-center bg-secondary rounded-full mr-4">
                     {feature.icon}
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold">{feature.title}</h3>
-                    <p className="text-gray-900 text-sm">{feature.desc}</p>
+                    <h3 className="text-lg font-bold text-primary">{feature.title}</h3>
+                    <p className="text-light text-sm">{feature.desc}</p>
                   </div>
                 </div>
               ))}

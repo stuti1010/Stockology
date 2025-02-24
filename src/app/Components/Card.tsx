@@ -42,7 +42,7 @@ interface CardsProps {
 
 const Cards:React.FC<CardsProps> = (props)=> {
   return (
-    <div className="relative border px-5 py-5 items-center flex  justify-center text-center rounded-lg shadow-xl bg-gradient-to-bl from-green-500  to-green-600
+    <div className="relative border px-5 py-5 items-center flex  justify-center text-center rounded-lg shadow-xl bg-white/20
     w-full h-full max-w-[90%] sm:max-w-[300px] sm:h-auto lg:h-[120px] mx-auto hover:scale-105 transition-transform duration-300 ease-in-out">
   
   {/* Add a subtle decorative element */}

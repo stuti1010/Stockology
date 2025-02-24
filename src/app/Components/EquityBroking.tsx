@@ -34,8 +34,8 @@ const EquityBroking = () => {
        <video width="120" height="120" autoPlay loop muted className="rounded-full  ">
             <source src="/equity.mp4" type="video/mp4" />
           </video>
-        <h1 className="md:text-5xl text-2xl font-bold">Equity Broking</h1></div>
-        <p className="text-gray-700  md:text-xl text-lg">
+        <h1 className="md:text-5xl text-primary text-3xl font-bold">Equity Broking</h1></div>
+        <p className="text-light  md:text-xl text-lg">
           Personalized equity broking services to help investors make informed decisions, maximize returns, and manage risks effectively.
         </p>
         <div className="md:px-8 px-3">
@@ -43,8 +43,8 @@ const EquityBroking = () => {
             {content.map((item, index) => (
               <motion.div key={index} className="border-b px-6 py-4 bg-green-400/40 rounded-3xl transition duration-300"
               whileHover={{ scale: 1.05 }}>
-                <h2 className="text-xl font-semibold">{item.title}</h2>
-                <p className="text-gray-600">{item.description}</p>
+                <h2 className="text-xl text-primary font-semibold">{item.title}</h2>
+                <p className="text-light">{item.description}</p>
               </motion.div>
             ))}
           </div>

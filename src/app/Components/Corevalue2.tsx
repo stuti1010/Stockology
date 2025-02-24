@@ -14,10 +14,10 @@ const Corevalue2 = () => {
     
       <div className="absolute inset-0 bg-white bg-opacity-80"></div>
       <div className="relative z-10">
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
         Our Fundamental Belief
       </h1>
-      <p className="text-lg md:text-2xl text-green-700 font-semibold max-w-7xl mb-5">
+      <p className="text-lg md:text-2xl text-secondary font-semibold max-w-7xl mb-5">
         Our core values define who we are, guide our actions, and inspire us to
         achieve excellence in everything we do.
       </p>

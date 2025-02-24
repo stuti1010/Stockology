@@ -64,7 +64,7 @@ const FinancialEducation = () => {
   return (
     <div className="container mx-auto text-center py-10">
       {/* Heading */}
-      <h1 className="text-4xl md:text-6xl font-bold pb-6">Financial Education</h1>
+      <h1 className="text-3xl md:text-5xl font-bold pb-6 text-primary">Financial Education</h1>
 
       {/* Icons Row */}
       <div className="flex justify-center gap-8 py-6 flex-wrap md:flex-nowrap">
@@ -72,14 +72,14 @@ const FinancialEducation = () => {
           <div
             key={index}
             className={`flex flex-col items-center cursor-pointer transition-all duration-300 ${
-              selected.title === item.title ? "text-green-500 scale-110" : "text-gray-700"
+              selected.title === item.title ? "text-secondary scale-110" : "text-light"
             }`}
             onClick={() => setSelected(item)}
           >
             <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 hover:bg-green-200 text-2xl p-4">
               {item.icon}
             </div>
-            <p className="mt-2 text-lg font-semibold">{item.title}</p>
+            <p className="mt-2 text-lg text-primary font-semibold">{item.title}</p>
           </div>
         ))}
       </div>
@@ -96,9 +96,9 @@ const FinancialEducation = () => {
         >
           {/* Left Side: Description */}
           <div className="text-left">
-            <h2 className="text-3xl font-bold pb-3">{selected.title}</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">{selected.description}</p>
-            <ul className="list-disc  ml-8 pl-8 pb-4 pt-0.5 rounded-lg text-gray-700">
+            <h2 className="text-3xl  text-primary font-bold pb-3">{selected.title}</h2>
+            <p className="text-lg text-light leading-relaxed">{selected.description}</p>
+            <ul className="list-disc  ml-8 pl-8 pb-4 pt-0.5 rounded-lg text-light">
               {selected.points.map((point, index) => (
                 <li key={index} className="py-1 rounded-xl px-4 bg-green-100 m-2">{point}</li>
               ))}

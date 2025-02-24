@@ -28,8 +28,8 @@ const MutualFunds = () => {
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
-      <h1 className="text-2xl md:text-5xl font-bold text-black">Mutual Funds</h1>
-      <p className="text-gray-800 text-lg max-w-2xl mx-auto leading-tight py-2">
+      <h1 className="text-3xl md:text-5xl font-bold text-primary">Mutual Funds</h1>
+      <p className="text-light text-lg max-w-2xl mx-auto leading-tight py-2">
         Mutual funds offer professional management, risk diversification, and accessibility, making them a preferred investment choice.
       </p>
 
@@ -94,10 +94,10 @@ const MutualFunds = () => {
                 visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
               }}
               whileHover={{ scale: 1.1 }}
-              className="flex flex-col items-center border-green-600 border-y-4 hover:bg-gradient-to-tl from-green-500/70 to-green-600/70 hover:text-white bg-white p-4 shadow-lg rounded-lg w-40 h-40 transition-all"
+              className="flex flex-col items-center border-secondary border-y-4 hover:bg-gradient-to-tl from-green-500/70 to-green-600/70 hover:text-white bg-white p-4 shadow-lg rounded-lg w-40 h-40 transition-all"
             >
-              <div className="text-green-600">{item.icon}</div>
-              <h2 className="text-md font-semibold mt-2">{item.title}</h2>
+              <div className="text-secondary">{item.icon}</div>
+              <h2 className="text-md text-primary font-semibold mt-2">{item.title}</h2>
             </motion.div>
           ))}
         </motion.div>

@@ -135,7 +135,7 @@ const accordionItems = [
   },
   {
     id: "panel10",
-    title: "What happens if I don’t use my Demat Account?",
+    title: "What happens if I don't use my Demat Account?",
     details: (
       <p>
         If your Demat Account remains inactive for a long period, it may be classified as <strong>dormant</strong>. 
@@ -195,10 +195,10 @@ const Page = () => {
     animate={{ opacity: 1 }} 
     transition={{ duration: 0.8 }}
   >
-    <h1 className='md:text-6xl leading-snug text-3xl font-semibold'>
-      Open a  <span className="text-green-500">Free Demat Account </span> Quickly
+    <h1 className='md:text-6xl leading-snug text-3xl font-bold text-primary'>
+      Open a  <span className="text-secondary">Free Demat Account </span> Quickly
     </h1>
-    <p className='font-sans md:text-xl py-3 text-gray-800'>
+    <p className='font-sans md:text-xl py-3 text-light'>
       Secure Your Future, Invest Today
     </p>
     <div className='md:grid grid-cols-2 gap-3'>
@@ -209,8 +209,8 @@ const Page = () => {
         transition={{ type: 'spring', stiffness: 100 }}
         className="flex my-5 justify-center border p-3 rounded-xl shadow-lg bg-green-50 items-center"
       >
-        <h1 className="md:text-5xl text-green-700 text-xl font-bold mr-2">&#8377;0</h1>
-        <p className="text-gray-700 w-[400px] md:text-lg text-xs">
+        <h1 className="md:text-5xl text-secondary text-xl font-bold mr-2">&#8377;0</h1>
+        <p className="text-light w-[400px] md:text-lg text-xs">
           AMC* & charges* on Mutual Funds and IPO
         </p>
       </motion.div>
@@ -222,8 +222,8 @@ const Page = () => {
         transition={{ type: 'spring', stiffness: 100 }}
         className="flex my-5 justify-center border p-3 rounded-xl shadow-lg  bg-green-50 items-center"
       >
-        <h1 className="md:text-5xl text-green-700 text-xl font-bold mr-2">&#8377;20</h1>
-        <p className="text-gray-700 w-[400px] md:text-lg text-xs">
+        <h1 className="md:text-5xl text-secondary text-xl font-bold mr-2">&#8377;20</h1>
+        <p className="text-light w-[400px] md:text-lg text-xs">
           Per order on Equity, F&O, Commodity and Currency
         </p>
       </motion.div>
@@ -237,7 +237,7 @@ const Page = () => {
     >
       <form onSubmit={handleSubmit(onSubmit)} className="w-full flex items-center space-x-5">
         <div className="flex items-center border border-gray-500 rounded-full px-3 py-2 w-[350px] shadow-sm focus-within:border-green-500">
-          <span className="font-semibold text-gray-700 mr-2">+91</span>
+          <span className="font-semibold text-light mr-2">+91</span>
           <input
             type="text"
             placeholder="Enter your mobile number"
@@ -248,13 +248,13 @@ const Page = () => {
                 message: "Enter a valid 10-digit number",
               },
             })}
-            className="outline-none w-full text-gray-700 bg-transparent"
+            className="outline-none w-full text-light bg-transparent"
           />
         </div>
         <button
           type="submit"
-          className={`bg-green-700 text-white font-semibold px-5 py-2 rounded-full whitespace-nowrap ${
-            submitted ? " cursor-pointer" : "hover:bg-green-800"
+          className={`bg-secondary text-white font-semibold px-5 py-2 rounded-full whitespace-nowrap ${
+            submitted ? " cursor-pointer" : "hover:bg-green-600"
           }`}
           disabled={submitted}
         >
@@ -262,9 +262,9 @@ const Page = () => {
         </button>
         {errors.mobile && <p className="text-red-500 text-sm absolute mt-14">{errors.mobile.message as string}</p>}
       </form>
-      <p className="text-sm mt-5 text-gray-600">
+      <p className="text-sm mt-5 text-light">
         <span className='text-red-500'>* </span>By continuing, I accept Stockology
-        <a href="#" className="text-green-600 underline">T&C and Privacy policy</a>
+        <a href="#" className="text-secondary underline">T&C and Privacy policy</a>
       </p>
     </motion.div>
   </motion.div>
@@ -282,18 +282,18 @@ const Page = () => {
 {/* scrollbaar */}
 
 <div  className='max-w-7xl mx-auto md:pt-20 pt-8 pb-10'>
-   <h1 className='md:text-5xl text-2xl font-semibold md:mb-10 mb-5'>Process for Opening a Demat Account</h1>
+   <h1 className='md:text-5xl text-3xl font-bold md:mb-10 mb-5 text-primary'>Process for Opening a Demat Account</h1>
   <Processbar/>
   <div className='flex gap-2 items-center'>
     <p className='text-2xl'><TiLockClosed/></p>
-    <p className='text-gray-700'>We safeguard your data with encryption, adhering to all regulatory requirements.</p>
+    <p className='text-light'>We safeguard your data with encryption, adhering to all regulatory requirements.</p>
   </div>
 </div>
 
 
 <div className='text-center  mt-8  md:mt-20 mb-8'>
-<h1 className=' md:text-5xl text-3xl font-semibold  '>Consider Different Financial Investment Strategies</h1>
-<p className="md:text-lg text-gray-700 my-3">Take Advantage of Diverse Trading Options with Stockology Demat</p>
+<h1 className=' md:text-5xl text-3xl font-semibold text-primary '>Consider Different Financial Investment Strategies</h1>
+<p className="md:text-lg text-light my-3">Take Advantage of Diverse Trading Options with Stockology Demat</p>
 </div>
 
      {/* cards */}
@@ -316,10 +316,10 @@ const Page = () => {
       <img src="/zero4.svg" alt="Affordable Brokerage" className="h-[350px] max-h-[350px] w-full object-contain" />
     </div>
     <div className="flex flex-col justify-center md:pl-6 text-center md:text-left">
-      <h1 className="md:text-5xl text-2xl font-semibold">
-        <span className="text-green-500">Affordable Brokerage</span>, Because Your Growth Matters
+      <h1 className="md:text-5xl text-2xl font-bold text-primary">
+        <span className="text-secondary">Affordable Brokerage</span>, Because Your Growth Matters
       </h1>
-      <p className="text-lg text-gray-700 my-5">
+      <p className="text-lg text-light my-5">
         Invest Smartly with Reduced DP and Brokerage Costs
       </p>
     </div>
@@ -329,7 +329,7 @@ const Page = () => {
       {/* Acccordion */}
 
         <div className="max-w-7xl mx-auto pt-10">
-        <h1 className="text-center md:text-5xl text-2xl font-semibold my-10">
+        <h1 className="text-center md:text-5xl text-3xl text-primary font-bold my-10">
           Frequently Asked Questions
         </h1>
         {accordionItems.map(({ id, title, transition, details }) => (

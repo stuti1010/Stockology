@@ -14,10 +14,10 @@ export default function SearchBar() {
     <div className="md:flex items-start md:gap-20 gap-8 p-8 flex-col md:flex-row bg-gradient-to-br from-white to-green-50 shadow-xl rounded-xl">
       {/* Search Input */}
       <div className="w-full md:w-1/2 relative">
-        <label className="block text-gray-800 font-semibold mb-3 text-lg">Select Location</label>
+        <label className="block text-primary font-semibold mb-3 text-lg">Select Location</label>
         <div className="relative">
           <select
-            className="w-full p-4 pl-12 pr-10 border border-gray-300 rounded-lg focus:ring-4 focus:ring-green-500 transition-all duration-300 ease-in-out hover:border-green-500 bg-white text-gray-800 font-medium shadow-sm cursor-pointer appearance-none"
+            className="w-full p-4 pl-12 pr-10 border border-gray-300 rounded-lg focus:ring-4 focus:ring-secondary transition-all duration-300 ease-in-out hover:border-green-600 bg-white text-light font-medium shadow-sm cursor-pointer appearance-none"
             value={selectedLocation.name}
             onChange={(e) =>
               setSelectedLocation(locations.find((loc) => loc.name === e.target.value)!)
@@ -42,12 +42,12 @@ export default function SearchBar() {
       <div className="w-full md:w-1/2 p-8 bg-white rounded-xl shadow-lg border-l-4 sm:mt-0 mt-5 border-green-500 hover:shadow-2xl transform transition-all duration-500 hover:scale-105 relative">
         <div className="flex items-center mb-4">
           <FaMapMarkerAlt className="text-green-600 text-3xl mr-3 animate-bounce" />
-          <h2 className="text-2xl font-bold text-gray-900">Address:</h2>
+          <h2 className="text-2xl font-bold text-primary">Address:</h2>
         </div>
-        <p className="text-gray-700 text-lg leading-relaxed font-medium">{selectedLocation.address}</p>
+        <p className="text-light text-lg leading-relaxed font-medium">{selectedLocation.address}</p>
         
         {/* Decorative Elements */}
-        <div className={`absolute top-2 right-2 px-3 py-1 rounded-full text-sm font-semibold shadow-md  ${selectedLocation.tag === "Popular" ? "bg-green-500 text-white" : "bg-green-500 text-white"}`}>
+        <div className={`absolute top-2 right-2 px-3 py-1 rounded-full text-sm font-semibold shadow-md  ${selectedLocation.tag === "Popular" ? "bg-secondary text-white" : "bg-secondary text-white"}`}>
           {selectedLocation.tag}
         </div>
       </div>

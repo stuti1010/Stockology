@@ -55,13 +55,13 @@ export default function App() {
             transition={{ duration: 1 }} 
             className="text-center md:text-left max-w-xl"
           >
-            <h1 className="text-4xl md:text-6xl font-extrabold text-black leading-tight">
-              Elevate Your <span className="text-green-500">Trading</span> Experience
+            <h1 className="text-3xl md:text-6xl font-extrabold text-primary leading-tight">
+              Elevate Your <span className="text-secondary">Trading</span> Experience
             </h1>
-            <p className="text-lg text-gray-700 mt-6 leading-relaxed">
+            <p className="text-lg text-light font-semibold mt-6 leading-relaxed">
               Stay ahead in the stock market with real-time updates, expert insights, and seamless trading tools.
             </p>
-            <button className="mt-8 px-6 py-3 text-lg font-semibold text-white bg-green-500 rounded-full shadow-lg hover:bg-green-400 transition">
+            <button className="mt-8 px-6 py-3 text-lg font-semibold text-white bg-secondary rounded-full shadow-lg hover:bg-green-400 transition">
               Get Started
             </button>
           </motion.div>
@@ -91,7 +91,7 @@ export default function App() {
           transition={{ duration: 0.8 }} 
           className="relative w-96 md:w-[550px] lg:w-[500px] h-auto"
         >
-         <h1 className=" top-5 left-0 text-xl md:text-2xl font-bold">📲 Explore Stockology&apos;s Mobile App</h1>
+         <h1 className=" top-5 left-0 text-xl md:text-2xl font-bold text-primary">📲 Explore Stockology&apos;s Mobile App</h1>
           {/* Mobile Background */}
           <img src="/mobile1.png" alt="Mobile Mockup" className="w-full h-auto max-w-full" />
 
@@ -124,8 +124,8 @@ export default function App() {
             >
               {feature.icon}
               <div>
-                <h3 className="text-lg font-bold">{feature.title}</h3>
-                <p className="text-gray-600 text-sm">{feature.description}</p>
+                <h3 className="text-lg font-bold text-primary">{feature.title}</h3>
+                <p className="text-light text-sm">{feature.description}</p>
               </div>
             </motion.div>
           ))}
@@ -135,23 +135,23 @@ export default function App() {
 {/**third section */}
       <div className=" px-3 md:py-24 py-10 bg-cover bg-center bg-no-repeat relative"
       style={{ backgroundImage: "url('/bg1.jpeg')" }}>
-        <h1 className="md:text-5xl text-2xl font-semibold text-center ">
+        <h1 className="md:text-5xl text-3xl font-bold text-center text-primary ">
           Manage Your Wealth On the Go{" "}
         </h1>
         <div className="flex flex-wrap justify-evenly  md:mt-20 mt-8 text-center">
           <div>
-            <h1 className="md:text-4xl text-lg font-semibold">1.5+ Thousand</h1>
-            <p className="text-green-500 font-semibold">App Downloads</p>
+            <h1 className="md:text-4xl text-lg text-primary font-semibold">1.5+ Thousand</h1>
+            <p className="text-secondary font-semibold">App Downloads</p>
           </div>
           <div>
-            <h1 className="md:text-4xl text-lg font-semibold">
+            <h1 className="md:text-4xl text-lg font-semibold text-primary">
               Fast & Secured
             </h1>
-            <p className="text-green-500 font-semibold">App </p>
+            <p className="text-secondary font-semibold">App </p>
           </div>
           <div>
-            <h1 className="md:text-4xl text-lg font-semibold">8K + Users</h1>
-            <p className="text-green-500 font-semibold">Rated Till Now</p>
+            <h1 className="md:text-4xl text-primary text-lg font-semibold">8K + Users</h1>
+            <p className="text-secondary font-semibold">Rated Till Now</p>
           </div>
         </div>
         <div className="md:mt-14 mt-8  flex justify-center">
@@ -164,8 +164,8 @@ export default function App() {
 
 {/* Fourth Section */}
 <div className="mt-8 w-full py-8 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-  <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">
-    Why Choose <span className="text-green-600">Stockology?</span>
+  <h2 className="text-3xl md:text-5xl font-bold text-center text-primary mb-8">
+    Why Choose <span className="text-secondary">Stockology?</span>
   </h2>
 
   <div className="bg-white  rounded-xl overflow-hidden py-2">
@@ -188,7 +188,7 @@ export default function App() {
             { feature: "Customizable Dashboard", stockology: "✅ Yes", others: "❌ No" },
           ].map((row, index) => (
             <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-              <td className="py-4 px-6 text-gray-700 font-medium">{row.feature}</td>
+              <td className="py-4 px-6 text-primary font-medium">{row.feature}</td>
               <td className="py-4 px-6 text-center text-green-600 font-semibold">{row.stockology}</td>
               <td className="py-4 px-6 text-center text-red-500 font-semibold">{row.others}</td>
             </tr>
@@ -235,9 +235,9 @@ export default function App() {
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-4xl font-extrabold uppercase tracking-wide "
+        className="md:text-4xl text-2xl font-extrabold uppercase tracking-wide "
       >
-        🚀 Benefits of <span className="text-green-500">Stockology</span>
+        🚀 Benefits of <span className="text-secondary">Stockology</span>
       </motion.h2>
 
       {/* Description (Top Right) */}

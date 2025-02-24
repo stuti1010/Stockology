@@ -12,28 +12,17 @@ import DepartmentRequest from '../Components/Departments';
 
 
 export default function ContactUs() {
-  
-
-//   const handleChange = (e) => {
-//     setForm({ ...form, [e.target.name]: e.target.value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log('Form submitted:', form);
-//   };
 
   return (
-    <div className="container mx-auto text-black md:py-16 py-5 px-3 ">
+    <div className="container mx-auto text-primary md:py-16 py-5 px-3 ">
         <div className="relative bg-[url('/contact4.svg')] bg-cover bg-no-repeat md:py-14 py-5 px-3">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-white opacity-50"></div>
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center justify-center md:px-16">
-        <h2 className="text-4xl font-bold   text-gray-900">CONTACT US</h2>
-        <div className="bg-green-500 w-52 pt-1 h-1" />
-        <p className="text-gray-700 mt-2 text-lg py-2 font-semibold text-center max-w-xl">
+        <h2 className="md:text-5xl text-3xl font-bold   text-primary">CONTACT US</h2>
+        <p className="text-light mt-2 text-lg py-2 font-semibold text-center max-w-xl">
           Get in touch with us, enquire anything you want, we&apos;re here to help and guide you!
         </p>
       </div>
@@ -44,7 +33,7 @@ export default function ContactUs() {
           {/* Left Section */}
           <div className='flex flex-col items-center justify-center'>
             <h1 className="text-yellow-500 text-lg md:text-xl text-start font-bold">#Contact Us</h1>
-            <h3 className="text-green-600 text-3xl md:text-6xl font-semibold leading-tight">
+            <h3 className="text-secondary text-3xl md:text-6xl font-semibold leading-tight">
               Get In <br /> Touch
             </h3>
           </div>
@@ -87,12 +76,12 @@ export default function ContactUs() {
         
       </div>
       <div className='md:py-28 pb-5 items-center px-3'>
-        <h1 className='text-green-600 text-start text-xl py-2 font-bold'>Any Queries? </h1>
-        <h2 className='text-black text-5xl py-2'>Contact Us</h2>
-        <p className='text-gray-700 text-lg '>For any queries feel  free to contact us regarding any stock trends ,investments or market insights.We&apos;re here to support your financial journey.</p>
+        <h1 className='text-secondary text-start text-xl py-2 font-bold'>Any Queries? </h1>
+        <h2 className='text-primary md:text-5xl text-3xl font-bold py-2'>Contact Us</h2>
+        <p className='text-light text-lg  '>For any queries feel  free to contact us regarding any stock trends ,investments or market insights.We&apos;re here to support your financial journey.</p>
         {/* Social Media Links */}
         <div className="py-3">
-          <p className="text-green-600 text-lg font-semibold mb-8">
+          <p className="text-secondary text-lg font-semibold mb-8">
             Stay updated with our latest news and updates.
           </p>
           <div className="flex px-6 gap-6">
@@ -150,10 +139,10 @@ export default function ContactUs() {
 
        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4">
             A Collaborative Network
           </h2>
-          <p className="text-gray-600 text-xl">
+          <p className="text-light text-xl">
             Branches and Partner Offices Working Together
           </p>
         </div>

@@ -50,8 +50,8 @@ export default function FAQSection() {
     <div className="bg-[url('/leftsideimg.jpg')] bg-cover bg-no-repeat bg-fixed  text-black py-12 px-4 sm:px-6 lg:px-8 w-full flex justify-center">
       <div className="max-w-3xl w-full">
         <header className="mb-10 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-green-500">FAQs</h2>
-          <p className="text-lg text-gray-800 mt-2">Answers to the most frequently asked questions.</p>
+          <h2 className="text-3xl md:text-5xl font-bold text-secondary">FAQs</h2>
+          <p className="text-lg text-light mt-2">Answers to the most frequently asked questions.</p>
         </header>
         <div className="space-y-5">
           {faqs.map((faq, index) => (

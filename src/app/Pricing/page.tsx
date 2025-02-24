@@ -8,7 +8,6 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails, {
   accordionDetailsClasses,
 } from "@mui/material/AccordionDetails";
-// import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Fade from "@mui/material/Fade";
 import Corevalue from "../Components/Corevalue"
@@ -59,13 +58,13 @@ const Page = () => {
       <div className="md:grid grid-cols-3 gap-5 max-w-7xl mx-auto  md:py-16 py-5 ">
         {/* left */}
         <div className="col-span-2">
-          <h1 className="md:text-4xl text-2xl font-semibold">
-            Looking for the <span className="text-green-500">Lowest</span>{" "}
+          <h1 className="md:text-4xl text-primary text-2xl font-semibold">
+            Looking for the <span className="text-secondary">Lowest</span>{" "}
             Brokerage Charges??
           </h1>
           <div className="flex my-10 justify-center items-center">
-            <h1 className="md:text-7xl text-4xl font-bold mr-4">ZE<span className="text-green-500">&#8377;</span>O</h1>
-            <p className="text-gray-700 w-[400px] md:text-lg text-xs">
+            <h1 className="md:text-7xl text-4xl font-bold mr-4 text-primary">ZE<span className="text-secondary">&#8377;</span>O</h1>
+            <p className="text-light w-[400px] md:text-lg text-xs">
               Stockology makes investing in the stock market simple and accessible,
               offering you the best Demat account with the lowest brokerage.
             </p>
@@ -87,10 +86,10 @@ const Page = () => {
 
       <Corevalue />
       <div className="text-center my-10">
-        <h1 className="md:text-5xl text-2xl font-semibold">
+        <h1 className="md:text-5xl text-3xl font-bold text-primary">
           Transparent Brokerage Charges
         </h1>
-        <p className="text-gray-700 pt-5 md:text-xl">
+        <p className="text-light pt-5 md:text-xl">
           Here&apos;s a detailed breakdown of our low brokerage charges with no
           hidden costs.
         </p>
@@ -107,10 +106,10 @@ const Page = () => {
   <div className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-t from-white to-transparent"></div>
   {/* Heading Section */}
   <div className="text-center relative z-10 my-5 ">
-    <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold">
+    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-primary">
       Know Your Exact Costs
     </h1>
-    <p className="text-sm sm:text-base md:text-lg text-gray-800 pt-2 sm:pt-3 max-w-2xl mx-auto">
+    <p className="text-sm sm:text-base md:text-lg text-light pt-2 sm:pt-3 max-w-2xl mx-auto">
       Calculate your overall costs, including our lowest brokerage charges.
     </p>
   </div>
@@ -122,15 +121,15 @@ const Page = () => {
     <div className="text-center md:text-left space-y-6 w-full md:w-1/2">
       {/* Brokerage Calculator */}
       <div className="bg-green-50 p-5 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-        <h1 className="text-lg sm:text-xl md:text-3xl font-extrabold text-gray-900">
+        <h1 className="text-lg sm:text-xl md:text-3xl font-bold text-primary">
           📊 Brokerage Calculator
         </h1>
-        <p className="text-gray-700 pt-2 sm:pt-3 text-sm sm:text-base">
+        <p className="text-light pt-2 sm:pt-3 text-sm sm:text-base">
           Know how much you will pay in brokerage with every trade.
         </p>
         <Link
           href=""
-          className="inline-block mt-4 px-5 sm:px-6 py-2 sm:py-3 bg-green-600 text-white font-semibold rounded-xl shadow-lg transition-all transform hover:scale-105 hover:bg-green-700 text-sm sm:text-base"
+          className="inline-block mt-4 px-5 sm:px-6 py-2 sm:py-3 bg-secondary text-white font-semibold rounded-xl shadow-lg transition-all transform hover:scale-105 hover:bg-green-600 text-sm sm:text-base"
         >
           Calculate Now 🚀
         </Link>
@@ -138,15 +137,15 @@ const Page = () => {
 
       {/* Margin Calculator */}
       <div className="bg-green-50 p-5 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-        <h1 className="text-lg sm:text-xl md:text-3xl font-extrabold text-gray-900">
+        <h1 className="text-lg sm:text-xl md:text-3xl font-bold text-primary">
           📈 Margin Calculator
         </h1>
-        <p className="text-gray-700 pt-2 sm:pt-3 text-sm sm:text-base">
+        <p className="text-light pt-2 sm:pt-3 text-sm sm:text-base">
           Check the margin required for F&O, Commodity, & Currency trade.
         </p>
         <Link
           href=""
-          className="inline-block mt-4 px-5 sm:px-6 py-2 sm:py-3 bg-green-600 text-white font-semibold rounded-xl shadow-lg transition-all transform hover:scale-105 hover:bg-green-700 text-sm sm:text-base"
+          className="inline-block mt-4 px-5 sm:px-6 py-2 sm:py-3 bg-secondary text-white font-semibold rounded-xl shadow-lg transition-all transform hover:scale-105 hover:bg-green-600 text-sm sm:text-base"
         >
           Calculate Now 📈
         </Link>
@@ -173,7 +172,7 @@ const Page = () => {
       {/* Acccordion */}
 
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-center md:text-5xl text-2xl font-semibold my-10">
+        <h1 className="text-center md:text-5xl text-3xl font-bold my-10 text-primary">
           Frequently Asked Questions
         </h1>
         {accordionItems.map(({ id, title, transition, details }) => (

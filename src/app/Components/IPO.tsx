@@ -14,10 +14,10 @@ export default function IPO() {
         transition={{ duration: 0.8 }} 
         className="mb-12 text-center"
       >
-        <h2 className="md:text-5xl text-2xl font-bold text-gray-900">
+        <h2 className="md:text-5xl text-3xl font-bold text-primary">
           IPO Investment Opportunities
         </h2>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="mt-4 text-lg text-light">
           Discover high-growth potential by investing in promising companies at an early stage.
         </p>
       </motion.div>
@@ -44,7 +44,7 @@ export default function IPO() {
           transition={{ duration: 0.8 }} 
           className="w-full lg:w-1/2 space-y-6"
         >
-          <h3 className="md:text-4xl text-3xl font-semibold text-gray-800">
+          <h3 className="md:text-4xl text-3xl font-semibold text-primary">
             Why Invest in IPOs?
           </h3>
 
@@ -57,17 +57,17 @@ export default function IPO() {
             ].map((benefit, index) => (
               <motion.li 
                 key={index} 
-                className="flex items-center space-x-3 text-lg text-gray-700"
+                className="flex items-center space-x-3 text-lg text-light"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                <span className="text-[#22c55e] text-2xl"><FaCheck /></span>
+                <span className="text-secondary text-2xl"><FaCheck /></span>
                 <span>{benefit}</span>
               </motion.li>
             ))}
           </ul>
 
-          <p className="text-base text-gray-600 leading-relaxed">
+          <p className="text-base text-light leading-relaxed">
             Investing in IPOs provides an opportunity to be part of a company&apos;s 
             journey from the start. However, thorough research and due diligence 
             are essential before making investment decisions.
@@ -76,7 +76,7 @@ export default function IPO() {
           {/* CTA Button with Animation */}
           <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}>
             <Link href="/IPOInvestments">
-              <button className="mt-6 px-6 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-green-700 transition duration-300">
+              <button className="mt-6 px-6 py-3 bg-secondary text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-green-600 transition duration-300">
                 Explore More
               </button>
             </Link>

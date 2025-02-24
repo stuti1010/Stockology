@@ -88,7 +88,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map  ((item,index) => (
           <li
-          key={index} // ✅ Fixed missing key
+          key={index} 
             className="w-[300px] max-w-full relative rounded-2xl border border-gray-300  flex-shrink-0  px-8 py-6 md:w-[400px]"
             style={{
               background:
@@ -102,18 +102,16 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
                {item.icon && (
-                  <span className="mr-2 text-5xl py-4">{item.icon}</span> // Render the icon if it exists
+                  <span className="mr-2 text-5xl py-4 text-secondary">{item.icon}</span> 
                 )}
-              <span className=" relative z-20 leading-[1.6]   text-xl font-semibold ">
+              <span className=" relative z-20 leading-[1.6] text-secondary  text-xl font-semibold ">
                {item.title}
               </span>
               
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  {/* <span className=" text-sm leading-[1.6] text-gray-800 font-normal">
-                    {item.name}
-                  </span> */}
-                  <span className=" text-sm leading-[1.6] text-gray-800 font-normal">
+                  
+                  <span className=" text-sm leading-[1.6] text-light font-normal">
                   {item.quote}
                   </span>
                 </span>

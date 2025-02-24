@@ -1,6 +1,6 @@
 "use client";
  
-// import React, { useEffect, useState } from "react";
+
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
 import { AiOutlineStock } from "react-icons/ai";
 import { TbSteam } from "react-icons/tb";
@@ -60,8 +60,8 @@ const Corevalue = () => {
 
 {/* Bottom Fade */}
 <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
-      <h1 className="text-center text-2xl md:text-5xl pb-5  font-semibold">Endless Benefits at Low Charges</h1>
-      <p className="md:text-xl text-center md:pb-20 pd-10 text-gray-800">Who we are is reflected in what we practice. Our values are the guiding light for everything we do at STOCKOLOGY.</p>
+      <h1 className="text-center text-3xl md:text-5xl pb-5  font-bold text-primary">Endless Benefits at Low Charges</h1>
+      <p className="md:text-xl text-center md:pb-20 pd-10 text-light">Who we are is reflected in what we practice. Our values are the guiding light for everything we do at STOCKOLOGY.</p>
        <div className=" rounded-md flex flex-col antialiased   items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}

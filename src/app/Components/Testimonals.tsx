@@ -42,7 +42,7 @@ export function Testimonials() {
   <div className="container mx-auto px-3   bg-cover bg-center bg-no-repeat relative py-4"
   style={{ backgroundImage: "url('/')" }}  >
     <div className="absolute inset-0 bg-white bg-opacity-20"></div>
-    <h1 className="text-center md:text-5xl text-3xl font-semibold md:py-12">Hear From Our Satisfied Customers</h1>
+    <h1 className="text-center md:text-5xl text-3xl font-semibold md:py-12 text-primary">Hear From Our Satisfied Customers</h1>
   <AnimatedTestimonials testimonials={testimonials} />
   </div>);
 }

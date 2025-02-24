@@ -22,14 +22,14 @@ export default function Processbar() {
     <div className="flex flex-col justify-center items-center py-10 px-5 w-full max-w-7xl mx-auto">
       {/* Progress Bar */}
       <div className="w-full bg-gray-300 h-1 rounded-full mb-6 relative">
-        <div className="bg-green-500 h-2 rounded-full transition-all" style={{ width: progressWidth }}></div>
+        <div className="bg-secondary h-2 rounded-full transition-all" style={{ width: progressWidth }}></div>
         <div className="absolute top-[-14px] left-0 w-full flex justify-between">
           {steps.map((step, index) => (
             <div
               key={step.id}
               ref={(el) => setStepRef(el, index)}
               className={`w-8 h-8 flex items-center justify-center rounded-full text-sm shadow-md cursor-pointer ${
-                step.id === currentStep ? "bg-green-500 text-white" : "bg-gray-400 text-gray-200"
+                step.id === currentStep ? "bg-secondary text-white" : "bg-gray-400 text-gray-200"
               }`}
               onClick={() => setCurrentStep(step.id)}
             >
@@ -50,9 +50,9 @@ export default function Processbar() {
             }`}
             onClick={() => setCurrentStep(step.id)}
           >
-            <div className="text-4xl text-green-600 mb-3">{step.icon}</div>
-            <h3 className="text-lg font-semibold text-gray-800">{step.title}</h3>
-            <p className="text-sm text-gray-600 mt-1">{step.description}</p>
+            <div className="text-4xl text-secondary mb-3">{step.icon}</div>
+            <h3 className="text-lg font-semibold text-primary">{step.title}</h3>
+            <p className="text-sm text-light mt-1">{step.description}</p>
           </div>
         ))}
       </div>

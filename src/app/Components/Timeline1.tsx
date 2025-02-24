@@ -58,8 +58,8 @@ export default function Journey() {
       {/* Main Content */}
       <div className="relative w-full max-w-7xl mx-auto text-white md:py-10 py-6 px-5 md:px-20 text-center">
         {/* Our Journey Section */}
-        <h1 className="text-5xl font-bold text-green-500">Our Journey</h1>
-        <p className="mt-4 text-lg max-w-2xl mx-auto text-gray-800">
+        <h1 className="md:text-5xl text-3xl font-bold text-primary">Our Journey</h1>
+        <p className="mt-4 text-lg max-w-2xl mx-auto text-light">
           Discover how Stockology evolved from a vision to a trusted stock broking firm.
           Explore our milestones, achievements, and relentless pursuit of excellence.
         </p>
@@ -104,10 +104,10 @@ export default function Journey() {
             className="w-56 h-56 object-cover rounded-lg shadow-lg"
           />
           <div className="md:ml-14 text-center md:text-left">
-            <h2 className="md:text-3xl text-xl font-semibold text-green-500">
+            <h2 className="md:text-3xl text-xl font-semibold text-secondary">
               {timelineData[activeIndex].title}
             </h2>
-            <p className="text-gray-900 mt-4 md:max-w-lg max-w-md">
+            <p className="text-light mt-4 md:max-w-lg max-w-md">
               {timelineData[activeIndex].content}
             </p>
           </div>
